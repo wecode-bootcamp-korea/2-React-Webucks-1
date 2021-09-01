@@ -1,0 +1,160 @@
+.Detail {
+  li {
+    list-style: none;
+    margin: 5px;
+  }
+
+  p {
+    font-size: 32px;
+    padding: 0px 0px 10px 0px;
+    margin: 0px 10px 0px 0px;
+  }
+
+  span {
+    font-size: 18px;
+    margin: 5px 10px 5px 0px;
+    padding: 10px 10px 5px 10px;
+  }
+
+  .webucksLogo {
+    width: 100px;
+    background-color: #f4f4f2;
+  }
+
+  .topBar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    background-color: #f4f4f2;
+  }
+
+  .topMenu {
+    display: flex;
+    justify-content: right;
+    margin: 15px 15px 15px 15px;
+  }
+
+  .coffeeTap {
+    color: #bbb;
+    text-decoration: none;
+  }
+
+  .menuTap {
+    margin-left: 20px;
+    color: #bbb;
+    text-decoration: none;
+  }
+
+  .storeTap {
+    margin-left: 20px;
+    color: #bbb;
+    text-decoration: none;
+  }
+
+  .whatsNewTap {
+    margin-left: 20px;
+    color: #bbb;
+    text-decoration: none;
+  }
+
+  .coldbrewSection {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .pagePath {
+    margin-top: 50px;
+    color: #d0d0d0;
+  }
+
+  .dolcheColdbrew {
+    width: 600px;
+  }
+
+  .informationSection {
+    display: flex;
+    justify-content: center;
+  }
+
+  .information {
+    margin-left: 30px;
+    width: 750px;
+  }
+
+  .explanation {
+    margin: 20px 0px 20px 0px;
+    padding: 30px 0px 10px 10px;
+    font-size: 18px;
+    border-top: 5px solid black;
+  }
+
+  .nutrition {
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 10px 0px 10px;
+    padding: 10px 0px 10px 0px;
+    border-top: 3px solid #eee;
+    border-bottom: 3px solid #eee;
+  }
+
+  .nutritionInformationFlex {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nutritionInformationColumn {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .nutritionInformationStyle {
+    margin-right: 10px;
+  }
+
+  .nutritionInformationStyle2 {
+    border-left: 3px dotted #eee;
+  }
+
+  .nutritionInformationStyle3 {
+    margin-right: -190px;
+  }
+
+  .allergyNav {
+    margin: 50px 0px 50px 0px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    background-color: #eee;
+  }
+
+  .reviewNav {
+    margin: 10px 0px 10px 0px;
+    padding: 0px 10px 0px 10px;
+    font-weight: bold;
+    border-bottom: 5px solid #eee;
+  }
+
+  .reviewBox {
+    margin-left: 633px;
+    padding: 50px 0px 50px 0px;
+  }
+
+  .inputReview {
+    padding: 15px 0px 15px 10px;
+    font-size: 18px;
+    resize: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #eee;
+  }
+
+  .footerBox {
+    margin-top: 30px;
+  }
+
+  .footerTap {
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    background-color: #333333;
+  }
+}
