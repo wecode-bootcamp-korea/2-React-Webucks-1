@@ -1,9 +1,5 @@
-import React from "react";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import Loginchanghyun from './pages/changhyunyoon/Login/Login';
 import Listchanghyun from './pages/changhyunyoon/List/List';
@@ -27,32 +23,32 @@ import Detailjinsung from './pages/jinsungkim/Detail/Detail';
 
 class Routes extends React.Component {
   render() {
-		return (
+    return (
       <Router>
         <Switch>
-        <Route exact path='/login-changhyun' component={Loginchanghyun} />
-        <Route exact path='/list-changhyun' component={Listchanghyun} />
-        <Route exact path='/detail-changhyun' component={Detailchanghyun} />
+          <Route exact path="/login-changhyun" component={Loginchanghyun} />
+          <Route exact path="/list-changhyun" component={Listchanghyun} />
+          <Route exact path="/detail-changhyun" component={Detailchanghyun} />
 
-        <Route exact path='/login-jungho' component={Loginjungho} />
-        <Route exact path='/list-jungho' component={Listjungho} />
-        <Route exact path='/detail-jungho' component={Detailjungho} />
+          <Route exact path="/login-jungho" component={Loginjungho} />
+          <Route exact path="/list-jungho" component={Listjungho} />
+          <Route exact path="/detail-jungho" component={Detailjungho} />
 
-        <Route exact path='/login-yoonjin' component={Loginyoonjin} />
-        <Route exact path='/list-yoonjin' component={Listyoonjin} />
-        <Route exact path='/detail-yoonjin' component={Detailyoonjin} />
+          <Route exact path="/login-yoonjin" component={Loginyoonjin} />
+          <Route exact path="/list-yoonjin" component={Listyoonjin} />
+          <Route exact path="/detail-yoonjin" component={Detailyoonjin} />
 
-        <Route exact path='/login-donggwon' component={Logindonggwon} />
-        <Route exact path='/list-donggwon' component={Listdonggwon} />
-        <Route exact path='/detail-donggwon' component={Detaildonggwon} />
+          <Route exact path="/login-donggwon" component={Logindonggwon} />
+          <Route exact path="/list-donggwon" component={Listdonggwon} />
+          <Route exact path="/detail-donggwon" component={Detaildonggwon} />
 
-        <Route exact path='/login-jinsung' component={Loginjinsung} />
-        <Route exact path='/list-jinsung' component={Listjinsung} />
-        <Route exact path='/detail-jinsung' component={Detailjinsung} />
+          <Route exact path="/login-jinsung" component={Loginjinsung} />
+          <Route exact path="/list-jinsung" component={Listjinsung} />
+          <Route exact path="/detail-jinsung" component={Detailjinsung} />
         </Switch>
       </Router>
-    )
-	}
+    );
+  }
 }
 
 export default Routes;
