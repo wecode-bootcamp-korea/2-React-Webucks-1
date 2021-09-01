@@ -1,0 +1,79 @@
+.Login {
+  @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+  * {
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  body {
+    background-color: gainsboro;
+  }
+  .header {
+    height: 20%;
+  }
+  .login-container {
+    height: 60%;
+  }
+  .footer {
+    height: 20%;
+  }
+  .WeBucks {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    margin: auto;
+    background-color: white;
+    border: 1px solid;
+    width: 500;
+    height: 700px;
+  }
+
+  h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 70px;
+    font-weight: bolder;
+    text-align: center;
+  }
+
+  .login-container {
+    width: 400px;
+    margin: 20px auto;
+  }
+
+  .loginBox {
+    margin-top: 60px;
+  }
+
+  .login-container {
+    input {
+      display: block;
+      width: 400px;
+      height: 50px;
+      padding: 10px;
+      margin: 20px 0px;
+    }
+  }
+
+  .login-btn {
+    width: 400px;
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+    background-color: #b2ebf4;
+    color: white;
+  }
+
+  .footer {
+    height: 20%;
+    color: #b2ebf4;
+    align-self: left;
+    align-items: center;
+  }
+
+  /*
+.login-btn:hover {
+cursor: pointer;
+opacity: 0.85;
+}
+*/
+}
