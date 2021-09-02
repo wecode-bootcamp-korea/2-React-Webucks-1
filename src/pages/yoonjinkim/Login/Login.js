@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './Login.scss';
 
-class Subject extends Component {
+class Subject extends React.Component {
   render() {
     return (
       <div classNameName="logo-wrap">
@@ -11,7 +11,7 @@ class Subject extends Component {
   }
 }
 
-class Form extends Component {
+class Form extends React.Component {
   render() {
     return (
       <form className="form-wrap">
@@ -29,7 +29,7 @@ class Form extends Component {
   }
 }
 
-class Login extends Component {
+class Login extends React.Component {
   render() {
     return (
       <div classNameName="Login">
