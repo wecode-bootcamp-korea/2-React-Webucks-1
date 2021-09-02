@@ -6,7 +6,9 @@ class Detail extends React.Component {
   render() {
     return (
       <>
-        <TopNav />
+        <section className="Detail">
+          <TopNav />
+        </section>
       </>
     );
   }

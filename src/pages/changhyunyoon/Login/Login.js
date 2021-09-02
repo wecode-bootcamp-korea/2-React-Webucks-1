@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 class Login extends React.Component {
   render() {
     return (
-      <section>
+      <section className="Login">
         <div className="logInBox">
           <p className="logInlogo">WeBucks</p>
           <form className="form" action="./list.html">

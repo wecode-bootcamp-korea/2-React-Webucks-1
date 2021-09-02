@@ -3,7 +3,7 @@ import React from 'react';
 class TopNav extends React.Component {
   render() {
     return (
-      <section className="head">
+      <section className="TopNav">
         <p className="logo">WeBucks</p>
         <a href="#" className="menu">
           WHAT'S NEW
