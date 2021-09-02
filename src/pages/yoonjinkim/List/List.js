@@ -1,26 +1,16 @@
 import React from 'react';
 import Nav from '../../../components/Nav/Nav';
-import LIST_DATA from './ListData';
+import CoffeeCard from '../../../components/CoffeeCard/CoffeeCard';
 
-class List extends React.Component {
+class Listyoonjin extends React.Component {
   render() {
     return (
       <>
         <Nav />
-        <section className="menu1">
-          {LIST_DATA.map(listData => {
-            return (
-              <List
-                key={listData.id}
-                imgsrc={listData.img}
-                name={listData.name}
-              />
-            );
-          })}
-        </section>
+        <CoffeeCard />
       </>
     );
   }
 }
 
-export default List;
+export default Listyoonjin;

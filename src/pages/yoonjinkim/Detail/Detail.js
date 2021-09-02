@@ -4,7 +4,7 @@ import '../../../styles/common.scss';
 import Nav from '../../../components/Nav/Nav';
 import './Detail.scss';
 
-class Detail extends React.Component {
+class Detailyoonjin extends React.Component {
   render() {
     return (
       <>
@@ -24,4 +24,4 @@ class Detail extends React.Component {
   }
 }
 
-export default Detail;
+export default Detailyoonjin;

@@ -29,7 +29,7 @@ class Form extends React.Component {
   }
 }
 
-class Login extends React.Component {
+class Loginyoonjin extends React.Component {
   render() {
     return (
       <div classNameName="Login">
@@ -40,4 +40,4 @@ class Login extends React.Component {
   }
 }
 
-export default Login;
+export default Loginyoonjin;
