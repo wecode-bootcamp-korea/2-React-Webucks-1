@@ -1,4 +1,4 @@
-const LIST_DATA1 = [
+const coldBrew = [
   {
     id: 1,
     src: 'https://image.istarbucks.co.kr/upload/store/skuimg/2021/08/[9200000003661]_20210819094346334.jpg',
@@ -55,7 +55,7 @@ const LIST_DATA1 = [
   },
 ];
 
-const LIST_DATA2 = [
+const brood = [
   {
     id: 1,
     src: 'https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[106509]_20210430111852999.jpg',
@@ -71,5 +71,5 @@ const LIST_DATA2 = [
   },
 ];
 
-export { LIST_DATA1 };
-export { LIST_DATA2 };
+export { coldBrew };
+export { brood };
