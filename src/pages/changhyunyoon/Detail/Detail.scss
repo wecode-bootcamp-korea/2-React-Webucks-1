@@ -9,48 +9,242 @@
     height: 50px;
     margin-bottom: 30px;
     background-color: rgb(255, 242, 223);
+
+    .logo {
+      display: inline-block;
+      font-family: 'Dancing Script', cursive;
+      font-size: 150%;
+      font-weight: bold;
+      margin: 10px 0px 0px 20px;
+    }
+
+    .menu {
+      display: inline;
+      float: right;
+      margin-top: 16px;
+      margin-right: 30px;
+      color: rgb(172, 164, 153);
+      text-decoration: none;
+    }
+
+    .coldbrew {
+      display: flex;
+      height: 55px;
+      margin-bottom: 40px;
+      align-items: center;
+      background-color: rgb(255, 242, 223);
+    }
+
+    .cold {
+      display: inline;
+      margin-left: 20px;
+      font-size: 110%;
+      font-weight: bold;
+    }
+
+    .coffeeimg {
+      display: inline;
+      width: 30px;
+      margin-left: 5px;
+    }
+
+    .dcafe {
+      display: inline;
+      font-size: 14px;
+    }
+
+    .content {
+      display: grid;
+      place-items: center;
+      margin: 0 0 100px 0;
+    }
   }
 
-  .logo {
-    display: inline-block;
-    font-family: 'Dancing Script', cursive;
-    font-size: 150%;
-    font-weight: bold;
-    margin: 10px 0px 0px 20px;
+  .class {
+    display: column;
+    width: 1200px;
+    height: 60px;
+
+    #coldBrewClass {
+      font-size: 25px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    #path {
+      color: gray;
+      text-align: right;
+    }
   }
 
-  .menu {
-    display: inline;
-    float: right;
-    margin-top: 16px;
-    margin-right: 30px;
-    color: rgb(172, 164, 153);
-    text-decoration: none;
-  }
-
-  .coldbrew {
+  .menuDetail {
     display: flex;
-    height: 55px;
-    margin-bottom: 40px;
-    align-items: center;
-    background-color: rgb(255, 242, 223);
+    width: 1200px;
+    .menuDetailLeft {
+      display: flex;
+      width: 500px;
+
+      img {
+        width: 450px;
+        height: 450px;
+      }
+    }
+    .menuDetailRight {
+      display: flex;
+      flex-direction: column;
+      width: 700px;
+      height: 100%;
+      padding-left: 20px;
+
+      .menuDetailRightTitle {
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10px;
+        border-bottom: 3px solid #333333;
+        .menuNames {
+          #menuName {
+            margin-bottom: 3px;
+            font-size: 22px;
+            font-weight: bold;
+          }
+
+          #menuNameEnglish {
+            padding-bottom: 5px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
   }
 
-  .cold {
-    display: inline;
-    margin-left: 20px;
-    font-size: 110%;
-    font-weight: bold;
+  .fa-heart {
+    font-size: 30px;
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.fas {
+      color: red;
+    }
   }
 
-  .coffeeimg {
-    display: inline;
-    width: 30px;
-    margin-left: 5px;
+  .menuDetailRightMain {
+    display: flex;
+    flex-direction: column;
+
+    .menuIntro {
+      width: 100%;
+      height: 70px;
+      line-height: 130%;
+      padding: 20px 0 10px 0;
+    }
   }
 
-  .dcafe {
-    display: inline;
-    font-size: 14px;
+  .menuNutritionTitle {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    border-top: solid silver 2px;
+    border-bottom: solid silver 2px;
+  }
+  .menuNutritionMain {
+    .menuNutritionBox {
+      display: flex;
+      flex-direction: row;
+      margin: 5px;
+
+      .nutritionBoxLeft {
+        width: 350px;
+        border-right: dashed 1px black;
+      }
+
+      .nutritionBoxRight {
+        width: 350px;
+      }
+
+      .nutri1,
+      .nutri2,
+      .nutri3,
+      .nutri4,
+      .nutri5,
+      .nutri6 {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px 10px;
+      }
+    }
+
+    #alergy {
+      background-color: #efefef;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 10px;
+    }
+  }
+
+  .menuDetailRightReview {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0px;
+    margin: 15px 0;
+
+    #reviewTitle {
+      height: 50px;
+      line-height: 50px;
+      font-size: 20px;
+      font-weight: bold;
+      border-bottom: solid silver 2px;
+    }
+
+    .reviews {
+      width: 100%;
+      padding: 10px;
+      line-height: 20px;
+      font-size: 15px;
+      list-style-type: square;
+    }
+
+    #reviewInput {
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 10px;
+      margin: 20px 0;
+      background-color: #efefef;
+      border: none;
+      &::placeholder {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+    height: 250px;
+    padding: 30px 0;
+    line-height: 35px;
+    color: #efefef;
+    background-color: #333333;
+
+    .company,
+    .corporate-sales,
+    .partnership,
+    .online-community {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .company-list,
+    .corporate-sales-list,
+    .partnership-list,
+    .online-community-list {
+      line-height: 25px;
+      color: #efefef;
+    }
   }
 }

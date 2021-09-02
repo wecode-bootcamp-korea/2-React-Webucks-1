@@ -1,8 +1,8 @@
 import React from 'react';
 import TopNav from '../TopNav/TopNav';
 import './List.scss';
-import { coldBrew } from '../../../CoffeeList';
-import { brood } from '../../../CoffeeList';
+import { coldBrew } from '../../../Listcoffeecard';
+import { brood } from '../../../Listcoffeecard';
 
 class List extends React.Component {
   render() {
