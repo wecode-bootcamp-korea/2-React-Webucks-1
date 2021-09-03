@@ -32,7 +32,7 @@ class Login extends React.Component {
             </form>
           </div>
           <div className="footer">
-            <a href="#">비밀번호를 잊으셨나요?</a>
+            <a href="#!">비밀번호를 잊으셨나요?</a>
           </div>
         </section>
       </div>

@@ -1,7 +1,6 @@
 .Login {
   * {
     box-sizing: border-box;
-    background-color: #eeefef;
   }
 
   .loginPage {
@@ -10,6 +9,7 @@
     justify-content: space-around;
     align-items: center;
     margin: auto;
+    margin-top: 5%;
     background-color: white;
     border: 2px solid #e0e0e0;
     border-radius: 5px;
@@ -19,18 +19,17 @@
 
   .header {
     height: 20%;
-  }
 
-  #loginPageLogo {
-    font-family: 'Dancing Script', cursive;
-    font-size: 50px;
-    font-weight: bold;
-    margin: 40px 0 0 0;
+    #loginPageLogo {
+      font-family: 'Dancing Script', cursive;
+      font-size: 50px;
+      font-weight: bold;
+      margin: 50px 0 0 0;
+    }
   }
 
   .middle {
-    height: 60%;
-
+    height: 55%;
     .loginPageInfoInput {
       margin-top: 60px;
 
@@ -59,21 +58,20 @@
         background-color: #60aded;
       }
     }
+  }
+  .footer {
+    height: 20%;
+    margin-top: 100px;
+    text-align: center;
 
-    .footer {
-      height: 20%;
-      margin-top: 50px;
-      text-align: center;
-
-      a:link {
-        text-decoration: none;
-        color: #4eabf8;
-      }
-    }
-
-    :visited {
+    a:link {
       text-decoration: none;
       color: #4eabf8;
     }
+  }
+
+  :visited {
+    text-decoration: none;
+    color: #4eabf8;
   }
 }
