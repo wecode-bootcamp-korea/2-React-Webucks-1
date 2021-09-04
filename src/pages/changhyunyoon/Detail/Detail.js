@@ -12,7 +12,6 @@ class Detail extends React.Component {
             <div className="class">
               <p id="coldBrewClass">콜드브루</p>
               <p id="path">
-                {' '}
                 홈 {'>'} MENU {'>'} 음료 {'>'} 콜드 브루 {'>'} 돌체 콜드 브루
               </p>
             </div>

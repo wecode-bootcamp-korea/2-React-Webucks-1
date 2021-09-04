@@ -1,8 +1,46 @@
 import React from 'react';
 import './Login.scss';
-import { Link } from 'react-router-dom';
 
 class Login extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      id: '',
+      password: '',
+      isActive: false,
+    };
+  }
+
+  handleIdInput = e => {
+    this.setState(
+      {
+        id: e.target.value,
+      },
+      () => this.handleBtn()
+    );
+  };
+
+  handlePWInput = e => {
+    this.setState(
+      {
+        password: e.target.value,
+      },
+      () => this.handleBtn()
+    );
+  };
+
+  handleBtn = () => {
+    this.state.id.includes('@') && this.state.password.length >= 5
+      ? this.setState({ isActive: true, className: 'loginBtn active' })
+      : this.setState({ isActive: false, className: 'loginBtn' });
+  };
+
+  goToList = () => {
+    if (this.state.isActive) {
+      this.props.history.push('./list-changhyun');
+    }
+  };
+
   render() {
     return (
       <section className="Login">
@@ -13,7 +51,10 @@ class Login extends React.Component {
               <input
                 className="text"
                 type="text"
-                placeholder="전화번호, 사용자 이름 또는 이메일"
+                placeholder="아이디"
+                value={this.state.id}
+                onChange={this.handleIdInput}
+                onKeyPress={this.handleBtn}
               />
             </div>
             <div>
@@ -21,14 +62,18 @@ class Login extends React.Component {
                 className="password"
                 type="password"
                 placeholder="비밀번호"
+                value={this.state.password}
+                onChange={this.handlePWInput}
+                onKeyPress={this.handleBtn}
               />
             </div>
             <div>
-              <Link>
-                <button className="button" disabled="disabled">
-                  로그인
-                </button>
-              </Link>
+              <button
+                className={this.state.isActive ? 'loginBtn active' : 'loginBtn'}
+                onClick={this.goToList}
+              >
+                로그인
+              </button>
             </div>
           </form>
           <a className="link" href="#">
@@ -39,4 +84,5 @@ class Login extends React.Component {
     );
   }
 }
+
 export default Login;
