@@ -16,7 +16,6 @@ class Login extends Component {
               />
               <ActiveButn />
               <a class="findPw" href="_blank">
-                {' '}
                 비밀번호를 잊으셨나요?
               </a>
             </div>

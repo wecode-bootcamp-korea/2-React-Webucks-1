@@ -7,10 +7,10 @@ class ActiveButn extends React.Component {
     this.state = {
       id: '',
       pw: '',
-      type: 'text',
-      class: 'defaultButton',
+      butnVaild: 'defaultButton',
     };
   }
+
   handleIdInput = event => {
     if (event.target.type === 'text') {
       this.setState({
@@ -22,24 +22,36 @@ class ActiveButn extends React.Component {
       });
     }
   };
+
+  butnActive = () => {
+    return this.state.id.includes('@') && this.state.pw.length >= 5
+      ? this.setState({ butnVaild: 'activeButton' })
+      : this.setState({ butnVaild: 'defaultButton' });
+  };
+
+  toList = () => {
+    if (this.state.butnVaild === 'activeButton')
+      this.props.history.push('/list-jinsung');
+  };
+
   render() {
     return (
       <div class="innerBox">
         <input
           onChange={this.handleIdInput}
-          value={this.state.id}
+          onKeyUp={this.ButnActive}
           class="inputBox"
           type="text"
           placeholder="전화번호, 사용자 이름 또는 이메일"
         />
         <input
           onChange={this.handleIdInput}
-          value={this.state.pw}
+          onKeyUp={this.ButnActive}
           class="inputBox"
           type="password"
           placeholder="비밀번호"
         />
-        <button class="defaultButton" disabled>
+        <button class={this.state.butnVaild} onClick={this.toList}>
           로그인
         </button>
       </div>
