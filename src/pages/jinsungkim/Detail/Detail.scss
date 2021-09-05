@@ -1,11 +1,11 @@
 .Detail {
   li {
     list-style: none;
-    margin: 5px;
+    margin: 8px;
   }
 
   p {
-    font-size: 32px;
+    font-size: 24px;
     padding: 0px 0px 10px 0px;
     margin: 0px 10px 0px 0px;
   }
@@ -14,6 +14,15 @@
     font-size: 18px;
     margin: 5px 10px 5px 0px;
     padding: 10px 10px 5px 10px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #bbb;
+  }
+
+  h4 {
+    margin-bottom: 15px;
   }
 
   .webucksLogo {
@@ -69,6 +78,12 @@
 
   .dolcheColdbrew {
     width: 600px;
+    height: 600px;
+  }
+
+  .coldbrewNameUnderbar {
+    padding-bottom: 20px;
+    border-bottom: 5px solid black;
   }
 
   .informationSection {
@@ -81,18 +96,23 @@
     width: 750px;
   }
 
+  .informationFelx {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   .explanation {
+    width: 510px;
     margin: 20px 0px 20px 0px;
-    padding: 30px 0px 10px 10px;
+    padding: 10px 0px 10px 10px;
     font-size: 18px;
-    border-top: 5px solid black;
   }
 
   .nutrition {
     display: flex;
     justify-content: space-between;
     margin: 0px 10px 0px 10px;
-    padding: 10px 0px 10px 0px;
+    padding: 20px 0px 10px 0px;
     border-top: 3px solid #eee;
     border-bottom: 3px solid #eee;
   }
@@ -116,13 +136,14 @@
   }
 
   .nutritionInformationStyle3 {
-    margin-right: -190px;
+    margin-right: -130px;
   }
 
   .allergyNav {
     margin: 50px 0px 50px 0px;
     padding: 10px 10px 10px 10px;
     border-radius: 5px;
+    font-size: 24px;
     background-color: #eee;
   }
 
@@ -134,7 +155,6 @@
   }
 
   .reviewBox {
-    margin-left: 633px;
     padding: 50px 0px 50px 0px;
   }
 

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import TopNav from '../TopNav/TopNav.js';
+import TopNav from '../TopNav';
+import { DOLCHE_COLDBREW } from './.CooffeeInformation';
+import '../../../styles/reset.scss';
 import '../Detail/Detail.scss';
 
 class Detail extends Component {
@@ -7,12 +9,34 @@ class Detail extends Component {
     return (
       <main className="Detail">
         <TopNav />
-        <nav class="coldbrewSection">
-          <p type="text">콜드 브루</p>
-          <span class="pagePath">
-            홈 〉 MENU 〉 음료 〉 에스프레소 〉 돌체 콜드 브루
-          </span>
-        </nav>
+        <div className="TapNav">
+          <nav class="coldbrewSection">
+            <p type="text">{DOLCHE_COLDBREW[0].coldbrew}</p>
+            <span class="pagePath">
+              <div>
+                <a target="_blank" href="new">
+                  홈
+                </a>
+                〉
+                <a target="_blank" href="new">
+                  MENU
+                </a>
+                〉
+                <a target="_blank" href="new">
+                  음료
+                </a>
+                〉
+                <a target="_blank" href="new">
+                  에스프레소
+                </a>
+                〉
+                <a target="_blank" href="new">
+                  돌체 콜드 브루
+                </a>
+              </div>
+            </span>
+          </nav>
+        </div>
         <section class="informationSection">
           <img
             class="dolcheColdbrew"
@@ -20,15 +44,11 @@ class Detail extends Component {
             alt="돌체 콜드 브루"
           />
           <div class="information">
-            <div>
-              <p>돌체 콜드 브루</p>Dolche Coldbrew
+            <div class="coldbrewNameUnderbar">
+              <p>{DOLCHE_COLDBREW[0].coldbrewName}</p>
+              {DOLCHE_COLDBREW[0].coldbrewEngName}
             </div>
-            <div class="explanation">
-              무더운 여름철, 동남아 휴가지에서 즐기는 커피를 떠오르게 하는
-              <br />
-              스타벅스 음료의 베스트 x 베스트 조합인 돌체 콜드 브루를
-              만나보세요!
-            </div>
+            <div class="explanation">{DOLCHE_COLDBREW[0].intro}</div>
             <div class="nutrition">
               <p>
                 <small>제품 영양 정보</small>
@@ -44,9 +64,9 @@ class Detail extends Component {
                 <span>단백질 (g)</span>
               </div>
               <div class="nutritionInformationColumn nutritionInformationStyle3">
-                <span>345</span>
-                <span>11</span>
-                <span>11</span>
+                <span>{DOLCHE_COLDBREW[0].kcal}</span>
+                <span>{DOLCHE_COLDBREW[0].fat}</span>
+                <span>{DOLCHE_COLDBREW[0].protein}</span>
               </div>
               <div class="nutritionInformationColumn nutritionInformationStyle nutritionInformationStyle2">
                 <span>나트륨 (mg)</span>
@@ -54,31 +74,28 @@ class Detail extends Component {
                 <span>카페인 (mg)</span>
               </div>
               <div class="nutritionInformationColumn nutritionInformationStyle">
-                <span>150</span>
-                <span>35</span>
-                <span>75</span>
+                <span>{DOLCHE_COLDBREW[0].Na}</span>
+                <span>{DOLCHE_COLDBREW[0].sugar}</span>
+                <span>{DOLCHE_COLDBREW[0].Caffeine}</span>
               </div>
             </div>
-            <div class="allergyNav">
-              <p>
-                <small>알레르기 유발요인: 우유</small>
-              </p>
-            </div>
+            <div class="allergyNav">알레르기 유발요인: 우유</div>
             <div>
               <p class="reviewNav">
                 <small>리뷰</small>
               </p>
+              <div class=" reviewBox">
+                <textarea
+                  class="inputReview"
+                  name="review"
+                  cols="66"
+                  rows="1"
+                  placeholder="리뷰를 입력해 주세요"
+                ></textarea>
+              </div>
             </div>
           </div>
         </section>
-        <div class="reviewBox"></div>
-        <textarea
-          class="inputReview"
-          name="review"
-          cols="65"
-          rows="1"
-          placeholder="리뷰를 입력해 주세요"
-        ></textarea>
         <footer class="footerTap footerBox">
           <ul>
             <li>

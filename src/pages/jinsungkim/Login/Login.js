@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import ActiveButn from './ActiveButn';
 import './Login.scss';
 
 class Login extends Component {
   render() {
     return (
-      <body className="Login">
+      <form className="Login">
         <div class="outLine">
           <div class="LoginBoxFlexCenter">
             <div class="LoginBox">
@@ -13,28 +14,7 @@ class Login extends Component {
                 src="../images/jinsungkim/webucksLogo.png"
                 alt="Webucks"
               />
-              <div class="innerBox">
-                <input
-                  id="id"
-                  class="idBox"
-                  type="text"
-                  placeholder="전화번호, 사용자 이름 또는 이메일"
-                />
-                <input
-                  id="pw"
-                  class="pwBox"
-                  type="password"
-                  placeholder="비밀번호"
-                />
-                <button
-                  id="butn"
-                  class="logButton"
-                  onclick="/List/List.js'"
-                  disabled
-                >
-                  로그인
-                </button>
-              </div>
+              <ActiveButn />
               <a class="findPw" href="_blank">
                 {' '}
                 비밀번호를 잊으셨나요?
@@ -43,7 +23,7 @@ class Login extends Component {
             <script type="text/javascript" src="/Login/Login.js"></script>
           </div>
         </div>
-      </body>
+      </form>
     );
   }
 }
