@@ -6,11 +6,7 @@ class TopNav extends React.Component {
     return (
       <div>
         <div class="topBar">
-          <img
-            class="webucksLogo"
-            src="../images/jinsungkim/webucksLogo.png"
-            alt="Webucks"
-          />
+          <span class="webucksLogo">Webucks</span>
           <nav class="topMenu">
             <a class="coffeeTap" href="new" target="_blank">
               COFFEE

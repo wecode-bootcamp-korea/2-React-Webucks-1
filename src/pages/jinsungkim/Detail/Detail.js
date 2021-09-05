@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TopNav from '../TopNav';
 import { DOLCHE_COLDBREW } from './.CooffeeInformation';
+import HeartButton from './HeartButton';
 import '../../../styles/reset.scss';
 import '../Detail/Detail.scss';
 
@@ -45,7 +46,9 @@ class Detail extends Component {
           />
           <div class="information">
             <div class="coldbrewNameUnderbar">
-              <p>{DOLCHE_COLDBREW[0].coldbrewName}</p>
+              <p class="heartButton">
+                {DOLCHE_COLDBREW[0].coldbrewName} <HeartButton />
+              </p>
               {DOLCHE_COLDBREW[0].coldbrewEngName}
             </div>
             <div class="explanation">{DOLCHE_COLDBREW[0].intro}</div>
@@ -88,7 +91,7 @@ class Detail extends Component {
                 <textarea
                   class="inputReview"
                   name="review"
-                  cols="66"
+                  cols="64"
                   rows="1"
                   placeholder="리뷰를 입력해 주세요"
                 ></textarea>

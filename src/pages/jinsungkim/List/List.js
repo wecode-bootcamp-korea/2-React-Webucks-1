@@ -10,7 +10,7 @@ class List extends Component {
     return (
       <div className="List">
         <div className="TopNavi">
-          <TopNav />
+          <TopNav class="webucksLogo" />
         </div>
         <div className="CoffeeCard">
           <p class="coldbrewListBar">

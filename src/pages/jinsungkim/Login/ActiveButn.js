@@ -29,31 +29,24 @@ class ActiveButn extends React.Component {
       : this.setState({ butnVaild: 'defaultButton' });
   };
 
-  toList = () => {
-    if (this.state.butnVaild === 'activeButton')
-      this.props.history.push('/list-jinsung');
-  };
-
   render() {
     return (
       <div class="innerBox">
         <input
           onChange={this.handleIdInput}
-          onKeyUp={this.ButnActive}
+          onKeyUp={this.butnActive}
           class="inputBox"
           type="text"
           placeholder="전화번호, 사용자 이름 또는 이메일"
         />
         <input
           onChange={this.handleIdInput}
-          onKeyUp={this.ButnActive}
+          onKeyUp={this.butnActive}
           class="inputBox"
           type="password"
           placeholder="비밀번호"
         />
-        <button class={this.state.butnVaild} onClick={this.toList}>
-          로그인
-        </button>
+        <button class={this.state.butnVaild}>로그인</button>
       </div>
     );
   }
