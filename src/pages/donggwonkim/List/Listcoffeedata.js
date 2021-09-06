@@ -1,4 +1,4 @@
-const COLDBREW = [
+const COLDBREW_COFFEE = [
   {
     id: 1,
     src: 'https://image.istarbucks.co.kr/upload/store/skuimg/2021/06/[9200000003643]_20210623101238720.jpg',
@@ -70,7 +70,7 @@ const COLDBREW = [
   },
 ];
 
-const BROOD = [
+const BROOD_COFFEE = [
   {
     id: 1,
     src: 'https://image.istarbucks.co.kr/upload/store/skuimg/2021/04/[106509]_20210430111852999.jpg',
@@ -86,5 +86,5 @@ const BROOD = [
   },
 ];
 
-export { COLDBREW };
-export { BROOD };
+export { COLDBREW_COFFEE };
+export { BROOD_COFFEE };

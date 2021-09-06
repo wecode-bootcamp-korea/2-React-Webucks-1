@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import '../List/List.scss';
-import { COLDBREW } from './Listcoffeedata';
-import { BROOD } from './Listcoffeedata';
-// import { Listcoffeecard } from './Listcoffeecard';
+import './List.scss';
+import { COLDBREW_COFFEE } from './ListCoffeeData';
+import { BROOD_COFFEE } from './ListCoffeeData';
+import ListCoffeeCard from './ListCoffeeCard';
 
 class List extends Component {
   render() {
@@ -28,14 +28,14 @@ class List extends Component {
             </span>
           </div>
           <div className="container">
-            {COLDBREW.map((li, index) => {
+            {COLDBREW_COFFEE.map(COLDBREW => {
               return (
-                <div className="menu">
-                  <div className="menuImgWrapper">
-                    <img src={li.src} alt={li.alt} />
-                  </div>
-                  <p>{li.name}</p>
-                </div>
+                <ListCoffeeCard
+                  key={COLDBREW.id}
+                  src={COLDBREW.src}
+                  alt={COLDBREW.alt}
+                  name={COLDBREW.name}
+                />
               );
             })}
           </div>
@@ -45,17 +45,19 @@ class List extends Component {
               디카페인 에스프레소 샷 추가 가능
             </span>
           </div>
-          <div className="container">
-            {BROOD.map(li => {
-              return (
-                <div className="menu">
-                  <div className="menuImgWrapper">
-                    <img src={li.src} alt={li.alt} />
-                  </div>
-                  <p>{li.name}</p>
-                </div>
-              );
-            })}
+          <div>
+            <div className="container">
+              {BROOD_COFFEE.map(BROOD => {
+                return (
+                  <ListCoffeeCard
+                    key={BROOD.id}
+                    src={BROOD.src}
+                    alt={BROOD.alt}
+                    name={BROOD.name}
+                  />
+                );
+              })}
+            </div>
           </div>
         </section>
       </div>

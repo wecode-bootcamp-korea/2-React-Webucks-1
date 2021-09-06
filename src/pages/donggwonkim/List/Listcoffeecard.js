@@ -1,14 +1,18 @@
-// import React, { Component } from 'react';
+import React, { Component } from 'react';
+import './ListCoffeeCard.scss';
+import './ListCoffeeData';
 
-// class Listcoffeecard extends Component {
-//   render() {
-//     return (
-//       <div className="menu">
-//         <div className="menuImgWrapper">
-//           <img src={this.props.src} alt={this.props.alt} />
-//         </div>
-//         <p>{this.props.name}</p>
-//       </div>
-//     );
-//   }
-// }
+class ListCoffeeCard extends Component {
+  render() {
+    return (
+      <div className="menu">
+        <div className="menuImgWrapper">
+          <img src={this.props.src} alt={this.props.alt} />
+        </div>
+        <p>{this.props.name}</p>
+      </div>
+    );
+  }
+}
+
+export default ListCoffeeCard;
