@@ -1,8 +1,22 @@
 import React from 'react';
 import TopNav from '../TopNav/TopNav';
+import heartImg from '../images/heart.png';
 import './Detail.scss';
 
 class Detail extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      click: false,
+    };
+  }
+
+  heartBox = () => {
+    this.setState({
+      click: !this.state.click,
+    });
+  };
+
   render() {
     return (
       <>
@@ -28,6 +42,12 @@ class Detail extends React.Component {
                     <div id="menuName">돌체 콜드 브루</div>
                     <div id="menuNameEnglish">Dolce Cold Brew</div>
                   </div>
+                  <img
+                    src={heartImg}
+                    alt="heart"
+                    className={this.setState.click ? 'heart acvive' : 'heart'}
+                    onClick={this.heartBox}
+                  />
                 </div>
                 <div className="menuDetailRightMain">
                   <p className="menuIntro">

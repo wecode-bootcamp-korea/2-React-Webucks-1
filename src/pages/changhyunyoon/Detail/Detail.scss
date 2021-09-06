@@ -101,6 +101,18 @@
         justify-content: space-between;
         padding-right: 10px;
         border-bottom: 3px solid #333333;
+
+        .heart {
+          width: 30px;
+          height: 30px;
+          margin-top: 8px;
+          color: white;
+        }
+
+        .active {
+          color: red;
+        }
+
         .menuNames {
           #menuName {
             margin-bottom: 3px;

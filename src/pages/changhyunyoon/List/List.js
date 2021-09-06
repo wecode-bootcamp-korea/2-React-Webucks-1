@@ -1,8 +1,9 @@
 import React from 'react';
 import TopNav from '../TopNav/TopNav';
 import './List.scss';
-import { coldBrew } from '../../../Listcoffeecard';
-import { brood } from '../../../Listcoffeecard';
+import coffeeImg from '../images/coffee.png';
+import { coldBrew } from '../Data/Listcoffeecard';
+import { brood } from '../Data/Listcoffeecard';
 
 class List extends React.Component {
   render() {
@@ -12,7 +13,7 @@ class List extends React.Component {
           <TopNav />
           <div className="coldbrew">
             <p className="cold">콜드 부르 커피</p>
-            <img className="coffeeimg" src="/images/coffee.png" alt="위벅스" />
+            <img className="coffeeimg" src={coffeeImg} alt="위벅스" />
             <p className="dcafe">
               디카페인 에스프레소 샷 추가 가능(일부 음료 제외)
             </p>
@@ -33,7 +34,7 @@ class List extends React.Component {
             <p className="cold">부르드 커피</p>
             <img
               className="coffeeimg"
-              src="/images/coffee.png"
+              src={coffeeImg}
               width="3%"
               alt="위벅스"
             />
