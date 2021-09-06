@@ -1,17 +1,12 @@
-import React from 'react';
-import '../Detail/Detail.scss';
+import React, { Component } from 'react';
+import './TopNav.scss';
 
 class TopNav extends React.Component{
     render() {
         return(
             <header>
-                <div className="Nav">
-                    <div className="Nav-left">
-                        <h1>
-                            WeBucks
-                        </h1>
-                    </div>
-                    <nav className = "Nav-right">
+                    <h1>WeBucks</h1>
+                    <nav nav className = "Nav-right">
                         <ul>
                             <li><Link to="#" />COFFEE</li>
                             <li><Link to="#" />MENU</li>
@@ -19,7 +14,6 @@ class TopNav extends React.Component{
                             <li><Link to="#" />WHAT'S NEW</li>           
                         </ul>
                     </nav>
-                </div>
             </header>
         );
     }
