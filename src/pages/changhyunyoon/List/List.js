@@ -1,9 +1,8 @@
 import React from 'react';
 import TopNav from '../TopNav/TopNav';
 import './List.scss';
-import coffeeImg from '../images/coffee.png';
-import { coldBrew } from '../Data/Listcoffeecard';
-import { brood } from '../Data/Listcoffeecard';
+import { Coldbrew } from './ListCoffeeCard';
+import { Brewed } from './ListCoffeeCard';
 
 class List extends React.Component {
   render() {
@@ -13,13 +12,17 @@ class List extends React.Component {
           <TopNav />
           <div className="coldbrew">
             <p className="cold">콜드 부르 커피</p>
-            <img className="coffeeimg" src={coffeeImg} alt="위벅스" />
+            <img
+              className="coffeeimg"
+              src="../images/coffee.png"
+              alt="위벅스"
+            />
             <p className="dcafe">
               디카페인 에스프레소 샷 추가 가능(일부 음료 제외)
             </p>
           </div>
           <section className="menu1">
-            {coldBrew.map(li => {
+            {Coldbrew.map(li => {
               return (
                 <div>
                   <a>
@@ -34,7 +37,7 @@ class List extends React.Component {
             <p className="cold">부르드 커피</p>
             <img
               className="coffeeimg"
-              src={coffeeImg}
+              src="../images/coffee.png"
               width="3%"
               alt="위벅스"
             />
@@ -43,7 +46,7 @@ class List extends React.Component {
             </p>
           </div>
           <section className="menu2">
-            {brood.map(li => {
+            {Brewed.map(li => {
               return (
                 <div>
                   <a>
