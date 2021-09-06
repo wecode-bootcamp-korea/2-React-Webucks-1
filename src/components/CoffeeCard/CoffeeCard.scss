@@ -1,0 +1,20 @@
+.list--wrap__listpage {
+  width: 100%;
+}
+
+.list--wrap__coldbrew {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list--wrap__coldbrew--item:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.list--wrap__brewed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

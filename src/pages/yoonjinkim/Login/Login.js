@@ -4,7 +4,7 @@ import './Login.scss';
 class Subject extends React.Component {
   render() {
     return (
-      <div classNameName="logo-wrap">
+      <div className="logo-wrap">
         <img alt="logo" src=".svg" />
       </div>
     );
@@ -31,8 +31,9 @@ class Form extends React.Component {
 
 class Loginyoonjin extends React.Component {
   render() {
+    console.log('나는 로그인 페이지');
     return (
-      <div classNameName="Login">
+      <div className="Login">
         <Subject></Subject>
         <Form></Form>
       </div>

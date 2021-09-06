@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+.coffee--nav {
+  background-color: #f4f4f2;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+.nav__menu {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1em;
+}
+
+.nav__logo {
+  margin: 1em;
+}
+
+.nav__menu--list {
+  margin: 1em;
+}
