@@ -44,7 +44,7 @@ class Detail extends Component {
         <section class="informationSection">
           <img
             class="dolcheColdbrew"
-            src="../Images/starbucksColdbrewPicture/돌체 콜드 브루.jpeg"
+            src="/Images/jinsungkim/starbucksColdbrewPicture/돌체 콜드 브루.jpeg"
             alt=""
           />
           <div class="information">

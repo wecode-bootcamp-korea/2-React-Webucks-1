@@ -47,8 +47,9 @@
   .defaultButton {
     display: flex;
     justify-content: center;
+    border: none;
     border-radius: 10px;
-    padding: 8px 0px 8px 0px;
+    padding: 10px 0px 10px 0px;
     margin-top: 15px;
     text-decoration: none;
     color: white;
@@ -58,8 +59,9 @@
   .activeButton {
     display: flex;
     justify-content: center;
+    border: none;
     border-radius: 10px;
-    padding: 8px 0px 8px 0px;
+    padding: 10px 0px 10px 0px;
     margin-top: 15px;
     text-decoration: none;
     color: white;

@@ -9,7 +9,11 @@ class Login extends Component {
         <div class="outLine">
           <div class="LoginBoxFlexCenter">
             <div class="LoginBox">
-              <img class="logo" src="../Images/webucksLogo.png" alt="Webucks" />
+              <img
+                class="logo"
+                src="/Images/jinsungkim/webucksLogo.png"
+                alt="Webucks"
+              />
               <ActiveButn />
               <a class="findPw" href="_blank">
                 비밀번호를 잊으셨나요?
