@@ -1,0 +1,281 @@
+.Detail {
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 70px;
+  }
+
+  header {
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 20%;
+    z-index: 1;
+    width: 60%;
+    height: 75px;
+    padding: 0px 20px;
+    background-color: #f6f5ef;
+    box-shadow: 10px 10px 20px;
+  }
+
+  .webucks {
+    font-family: 'Dancing Script', cursive;
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  header {
+    a {
+      color: #000000;
+      text-decoration: none;
+    }
+  }
+
+  nav {
+    min-width: 50%;
+  }
+
+  nav {
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+
+    li {
+      padding: 5px;
+      list-style: none;
+    }
+  }
+
+  .DetailMenu {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-top: 30px;
+  }
+
+  .DetailMenuCategory {
+    position: relative;
+    height: 80px;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  /* > 이미지 */
+  .DetailMenuCategory {
+    ul {
+      position: absolute;
+      display: flex;
+      justify-content: space-around;
+      right: 0;
+      bottom: 0;
+      width: 400px;
+    }
+
+    li {
+      list-style: none;
+    }
+  }
+
+  .DetailMenuCategory {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .SideMenu {
+    color: #bdbdbd;
+  }
+
+  .CurrentMenu {
+    color: #bdbdbd;
+  }
+
+  .DetailContent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .MenuContent {
+    max-width: 45%;
+    min-width: 300px;
+    padding: 10px;
+  }
+
+  .MenuImage {
+    max-width: 45%;
+    min-width: 300px;
+    padding: 10px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .TotalMenuInfo {
+    max-width: 55%;
+    padding: 10px;
+  }
+
+  .MenuTopInfo {
+    position: relative;
+
+    p {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+
+    h3 {
+      padding-bottom: 18px;
+      margin-bottom: 20px;
+      color: #212121;
+      border-bottom: 2px solid #333333;
+      font-size: 25px;
+      font-weight: 400;
+    }
+  }
+
+  .EngName {
+    color: #424242;
+    font-size: 16px;
+  }
+
+  .HeartBtnPack {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .HeartBtn {
+    color: #9e9e9e;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
+
+  .MenuInfo {
+    display: flex;
+    flex-direction: column;
+
+    dl {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .MenuNutriInfo {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+
+    p {
+      color: #212121;
+      font-size: 18px;
+      padding: 10px;
+      margin: 10px;
+    }
+  }
+
+  .MenuContentInfo {
+    display: flex;
+    justify-content: space-between;
+
+    ul {
+      width: 45%;
+      margin: 10px;
+      padding: 10px;
+      font-size: 14px;
+    }
+
+    li {
+      padding-bottom: 15px;
+      list-style: none;
+    }
+  }
+
+  .WarningMessage {
+    margin: 10px;
+    padding: 10px;
+    font-size: 18px;
+    background-color: #eeeeee;
+  }
+
+  .border {
+    margin: 20px auto;
+    border-right: 1px dashed #eeeeee;
+  }
+
+  .ReviewSection {
+    margin-bottom: 30px;
+    h2 {
+      padding: 20px 0px;
+      border-bottom: 1px solid #eeeeee;
+    }
+
+    ul {
+      padding: 20px 0px;
+      list-style: none;
+    }
+
+    li {
+      padding-bottom: 12px;
+    }
+
+    dl {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    dt {
+      font-weight: 800;
+      padding-right: 10px;
+    }
+  }
+
+  footer {
+    width: 100%;
+    background-color: #424242;
+  }
+
+  .FooterMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px auto;
+    padding: 10px 50px;
+    color: white;
+  }
+
+  .FooterMenu ul li {
+    list-style: none;
+  }
+
+  .FooterMenuTitle {
+    margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: 100;
+  }
+
+  .FooterMenuCont {
+    color: #eeeeee;
+    text-decoration: none;
+  }
+}

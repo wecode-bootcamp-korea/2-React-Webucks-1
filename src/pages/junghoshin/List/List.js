@@ -1,4 +1,7 @@
-import React, { Component } from 'react';
+/* eslint-disable react/jsx-no-undef */
+/* eslint-disable no-unused-vars */
+import React from 'react';
+import CoffeeCard from './CoffeeCard';
 import '../TopNav/TopNav';
 import './List.scss';
 
@@ -13,14 +16,16 @@ class List extends React.Component {
         <img
           src="https://image.istarbucks.co.kr/common/img/menu/logo_decaf.png"
           alt="커피 이모지"
-          style="height: 15"
         />
         <p>디카페인 에스프레스 샷 추가 가능(일부 음료 제외)</p>
         <div />
         <header />
         <section className="KindOfColdBrew" />
+        {/* 컴포넌트 */}
+        <CoffeeCard />
+
         <ul className="ColdBrew" />
-        <li>
+        {/*<li>
           <img
             src="https://image.istarbucks.co.kr/upload/store/skuimg/2021/08/[9200000003661]_20210819094346176.jpg"
             alt="시그니처 더 블랙 콜드 브루"
@@ -76,11 +81,14 @@ class List extends React.Component {
           />
           <p>제주 비자림 콜드 브루</p>
         </li>
+         */}
         <ul />
+
         <section />
         <section />
       </div>
     );
   }
 }
+
 export default List;
