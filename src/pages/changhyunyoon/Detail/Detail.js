@@ -1,19 +1,21 @@
 import React from 'react';
 import TopNav from '../TopNav/TopNav';
-import heartImg from '../images/heart.png';
+import DetailReview from '../../../components/DetailReview';
+import { BsHeart } from 'react-icons/bs';
+import { BsHeartFill } from 'react-icons/bs';
 import './Detail.scss';
 
 class Detail extends React.Component {
   constructor() {
     super();
     this.state = {
-      click: false,
+      clickIcon: false,
     };
   }
 
   heartBox = () => {
     this.setState({
-      click: !this.state.click,
+      clickIcon: !this.state.clickIcon,
     });
   };
 
@@ -42,12 +44,16 @@ class Detail extends React.Component {
                     <div id="menuName">돌체 콜드 브루</div>
                     <div id="menuNameEnglish">Dolce Cold Brew</div>
                   </div>
-                  <img
-                    src={heartImg}
-                    alt="heart"
-                    className={this.setState.click ? 'heart acvive' : 'heart'}
-                    onClick={this.heartBox}
-                  />
+                  <div className="heartList">
+                    {this.state.clickIcon ? (
+                      <BsHeartFill
+                        className="heart clickHeart"
+                        onClick={this.heartBox}
+                      />
+                    ) : (
+                      <BsHeart className="heart" onClick={this.heartBox} />
+                    )}
+                  </div>
                 </div>
                 <div className="menuDetailRightMain">
                   <p className="menuIntro">
@@ -98,13 +104,7 @@ class Detail extends React.Component {
                 <div className="menuDetailRightReview">
                   <div id="reviewTitle">리뷰</div>
                   <div className="reviews"></div>
-                  <form>
-                    <input
-                      id="reviewInput"
-                      type="text"
-                      placeholder="리뷰를 입력해주세요"
-                    />
-                  </form>
+                  <DetailReview />
                 </div>
               </div>
             </div>

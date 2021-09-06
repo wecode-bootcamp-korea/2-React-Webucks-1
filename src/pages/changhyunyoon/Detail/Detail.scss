@@ -106,10 +106,9 @@
           width: 30px;
           height: 30px;
           margin-top: 8px;
-          color: white;
         }
 
-        .active {
+        .clickHeart {
           color: red;
         }
 
@@ -211,8 +210,9 @@
       width: 100%;
       height: 50px;
       line-height: 50px;
+      border-radius: 5px;
       padding: 0 10px;
-      margin: 20px 0;
+      margin: 10px 0;
       background-color: #efefef;
       border: none;
       &::placeholder {
