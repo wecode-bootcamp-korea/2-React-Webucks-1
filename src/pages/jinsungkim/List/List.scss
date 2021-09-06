@@ -16,6 +16,7 @@
 
   img {
     width: 280px;
+    margin-bottom: 5px;
   }
 
   span {
@@ -27,12 +28,14 @@
   small {
     font-size: 15px;
   }
+
   .TopNavi {
     .webucksLogo {
       font-family: 'Dancing Script', cursive;
       margin: 10px 10px 10px 10px;
       font-size: 32px;
     }
+
     .topBar {
       display: flex;
       justify-content: space-between;
@@ -48,7 +51,7 @@
     .topMenu {
       display: flex;
       justify-content: right;
-      margin: 15px 15px 15px 15px;
+      margin: 20px 15px 15px 15px;
     }
 
     .coffeeTap {

@@ -4,16 +4,10 @@
     margin: 8px;
   }
 
-  p {
-    font-size: 32px;
-    padding: 0px 0px 10px 0px;
-    margin: 20px 10px 0px 0px;
-  }
-
   span {
     font-size: 18px;
     margin: 5px 10px 5px 0px;
-    padding: 0px 10px 0px 0px;
+    padding: 10px 0px 0px 0px;
   }
 
   a {
@@ -25,9 +19,15 @@
     margin-bottom: 15px;
   }
 
+  .Hfont {
+    font-size: 32px;
+    padding: 0px 0px 10px 0px;
+    margin: 20px 10px 0px 0px;
+  }
+
   .webucksLogo {
     font-family: 'Dancing Script', cursive;
-    margin: 10px 10px 10px 10px;
+    margin: 0px 10px 10px 10px;
     font-size: 32px;
   }
 
@@ -42,6 +42,14 @@
 
   .activeHeartButton {
     color: red;
+  }
+
+  .defaultHeartButton:hover {
+    transform: scale(1.2);
+  }
+
+  .activeHeartButton:hover {
+    transform: scale(1.2);
   }
 
   .topBar {
@@ -126,7 +134,7 @@
     display: flex;
     justify-content: space-between;
     margin: 0px 10px 0px 10px;
-    padding: 20px 0px 10px 0px;
+    padding: 10px 0px 10px 0px;
     border-top: 3px solid #eee;
     border-bottom: 3px solid #eee;
   }
@@ -134,6 +142,15 @@
   .nutritionInformationFlex {
     display: flex;
     justify-content: space-between;
+    padding: 10px 10px 20px 10px;
+  }
+
+  .nutritionInformationFlex2 {
+    padding-right: 192px;
+  }
+
+  .nutritionInformationBorder {
+    border-right: 3px dotted #eee;
   }
 
   .nutritionInformationColumn {
@@ -142,34 +159,29 @@
   }
 
   .nutritionInformationStyle {
-    margin-right: 10px;
-  }
-
-  .nutritionInformationStyle2 {
-    border-left: 3px dotted #eee;
-  }
-
-  .nutritionInformationStyle3 {
-    margin-right: -130px;
+    text-align: right;
   }
 
   .allergyNav {
-    margin: 50px 0px 50px 0px;
-    padding: 15px 10px 10px 10px;
+    margin: 0px 0px 50px 0px;
+    padding: 15px 10px 10px 20px;
     border-radius: 5px;
     font-size: 24px;
     background-color: #eee;
   }
 
   .reviewNav {
-    margin: 10px 0px 10px 0px;
     padding: 0px 10px 0px 10px;
     font-weight: bold;
-    border-bottom: 5px solid #eee;
+    border-bottom: 3px solid #eee;
   }
 
   .reviewBox {
-    padding: 50px 0px 50px 0px;
+    font-size: 18px;
+  }
+
+  .reviewFont {
+    font-size: 24px;
   }
 
   .inputReview {
@@ -179,6 +191,23 @@
     border: none;
     border-radius: 5px;
     background-color: #eee;
+  }
+
+  .inputReviewFlex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .reviewInputButton {
+    width: 70px;
+    height: 50px;
+    border: 3px solid #bbb;
+    border-radius: 5px;
+    background-color: #eee;
+  }
+
+  .reviewInputButton:hover {
+    background-color: #bbb;
   }
 
   .footerBox {

@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import TopNav from '../TopNav';
-import { DOLCHE_COLDBREW } from './.CooffeeInformation';
+import { DOLCHE_COLDBREW } from './.CooffeeMockData';
 import HeartButton from './HeartButton';
+import InputReview from './inputReview';
 import '../../../styles/reset.scss';
-import '../Detail/Detail.scss';
+import './Detail.scss';
 
 class Detail extends Component {
   render() {
@@ -12,7 +13,9 @@ class Detail extends Component {
         <TopNav />
         <div className="TapNav">
           <nav class="coldbrewSection">
-            <p type="text">{DOLCHE_COLDBREW[0].coldbrew}</p>
+            <p class="Hfont" type="text">
+              {DOLCHE_COLDBREW[0].coldbrew}
+            </p>
             <span class="pagePath">
               <div>
                 <a target="_blank" href="new">
@@ -41,60 +44,58 @@ class Detail extends Component {
         <section class="informationSection">
           <img
             class="dolcheColdbrew"
-            src="../images/jinsungkim/starbucks_ColdBrew_PIcture/돌체 콜드 브루.jpeg"
-            alt="돌체 콜드 브루"
+            src="../Images/starbucksColdbrewPicture/돌체 콜드 브루.jpeg"
+            alt=""
           />
           <div class="information">
             <div class="coldbrewNameUnderbar">
-              <p class="heartButton">
+              <p class="heartButton Hfont">
                 {DOLCHE_COLDBREW[0].coldbrewName} <HeartButton />
               </p>
               {DOLCHE_COLDBREW[0].coldbrewEngName}
             </div>
             <div class="explanation">{DOLCHE_COLDBREW[0].intro}</div>
             <div class="nutrition">
-              <p>
+              <p class="Hfont">
                 <small>제품 영양 정보</small>
               </p>
-              <p>
+              <p class="Hfont">
                 <small>Tall(톨) / 355ml (12 fl oz)</small>
               </p>
             </div>
             <div class="nutritionInformationFlex">
-              <div class="nutritionInformationColumn">
-                <span>1회 제공량 (kcal)</span>
-                <span>포화지방 (g)</span>
-                <span>단백질 (g)</span>
+              <div class="nutritionInformationFlex nutritionInformationBorder">
+                <div class="nutritionInformationColumn nutritionInformationFlex2">
+                  <span>1회 제공량 (kcal)</span>
+                  <span>포화지방 (g)</span>
+                  <span>단백질 (g)</span>
+                </div>
+                <div class="nutritionInformationColumn nutritionInformationStyle">
+                  <span>{DOLCHE_COLDBREW[0].kcal}</span>
+                  <span>{DOLCHE_COLDBREW[0].fat}</span>
+                  <span>{DOLCHE_COLDBREW[0].protein}</span>
+                </div>
               </div>
-              <div class="nutritionInformationColumn nutritionInformationStyle3">
-                <span>{DOLCHE_COLDBREW[0].kcal}</span>
-                <span>{DOLCHE_COLDBREW[0].fat}</span>
-                <span>{DOLCHE_COLDBREW[0].protein}</span>
-              </div>
-              <div class="nutritionInformationColumn nutritionInformationStyle nutritionInformationStyle2">
-                <span>나트륨 (mg)</span>
-                <span>당류 (g)</span>
-                <span>카페인 (mg)</span>
-              </div>
-              <div class="nutritionInformationColumn nutritionInformationStyle">
-                <span>{DOLCHE_COLDBREW[0].Na}</span>
-                <span>{DOLCHE_COLDBREW[0].sugar}</span>
-                <span>{DOLCHE_COLDBREW[0].Caffeine}</span>
+              <div class="nutritionInformationFlex">
+                <div class="nutritionInformationColumn nutritionInformationFlex2">
+                  <span>나트륨 (mg)</span>
+                  <span>당류 (g)</span>
+                  <span>카페인 (mg)</span>
+                </div>
+                <div class="nutritionInformationColumn nutritionInformationStyle">
+                  <span>{DOLCHE_COLDBREW[0].Na}</span>
+                  <span>{DOLCHE_COLDBREW[0].sugar}</span>
+                  <span>{DOLCHE_COLDBREW[0].Caffeine}</span>
+                </div>
               </div>
             </div>
             <div class="allergyNav">알레르기 유발요인: 우유</div>
             <div>
-              <p class="reviewNav">
+              <p class="reviewNav Hfont">
                 <small>리뷰</small>
               </p>
               <div class=" reviewBox">
-                <textarea
-                  class="inputReview"
-                  name="review"
-                  cols="64"
-                  rows="1"
-                  placeholder="리뷰를 입력해 주세요"
-                ></textarea>
+                <InputReview />
               </div>
             </div>
           </div>

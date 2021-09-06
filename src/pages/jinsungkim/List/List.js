@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import TopNav from '../TopNav';
-import { BREWED_COFFEE } from './.CoffeeCard';
-import { COLDBREW_COFFEE } from './.CoffeeCard';
+import { BREWED_COFFEE } from './.CoffeeCardMockData';
+import { COLDBREW_COFFEE } from './.CoffeeCardMockData';
 import '../../../styles/reset.scss';
 import '../List/List.scss';
 
