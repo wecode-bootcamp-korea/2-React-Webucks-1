@@ -1,0 +1,77 @@
+.Login {
+  * {
+    box-sizing: border-box;
+  }
+
+  .loginPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+    margin-top: 5%;
+    background-color: white;
+    border: 2px solid #e0e0e0;
+    border-radius: 5px;
+    width: 400px;
+    height: 500px;
+  }
+
+  .header {
+    height: 20%;
+
+    #loginPageLogo {
+      font-family: 'Dancing Script', cursive;
+      font-size: 50px;
+      font-weight: bold;
+      margin: 50px 0 0 0;
+    }
+  }
+
+  .middle {
+    height: 55%;
+    .loginPageInfoInput {
+      margin-top: 60px;
+
+      input {
+        display: block;
+        width: 300px;
+        height: 40px;
+        padding: 5px;
+        margin: 20px 0px;
+        border-radius: 5px;
+        background-color: #f7f7f7;
+      }
+    }
+
+    button {
+      width: 300px;
+      height: 40px;
+      padding: 5px;
+      border-radius: 10px;
+      border: none;
+      background-color: #add3ea;
+      color: white;
+      font-size: medium;
+
+      &.active {
+        background-color: #60aded;
+      }
+    }
+  }
+  .footer {
+    height: 20%;
+    margin-top: 100px;
+    text-align: center;
+
+    a:link {
+      text-decoration: none;
+      color: #4eabf8;
+    }
+  }
+
+  :visited {
+    text-decoration: none;
+    color: #4eabf8;
+  }
+}
