@@ -10,21 +10,21 @@
   background-color: gainsboro;
 
   .logInBox {
+    margin-top: 150px;
+    width: 400px;
+    height: 460px;
     text-align: center;
     border: 2px solid whitesmoke;
     border-radius: 4px;
     background-color: white;
-    margin-top: 150px;
-    width: 400px;
-    height: 460px;
   }
 
   .logInlogo {
+    margin-top: 50px;
+    margin-bottom: 40px;
     font-family: 'Dancing Script', cursive;
     font-size: 350%;
     font-weight: bold;
-    margin-top: 50px;
-    margin-bottom: 40px;
   }
 
   input,
@@ -42,13 +42,13 @@
   }
 
   .loginBtn {
+    margin-bottom: 60px;
     border: 0px;
     outline: 0px;
     border-radius: 8px;
     color: white;
-    margin-bottom: 60px;
-    background-color: #3a72da;
     opacity: 0.5;
+    background-color: #3a72da;
   }
 
   .active {

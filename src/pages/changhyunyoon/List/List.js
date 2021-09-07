@@ -12,7 +12,7 @@ class List extends React.Component {
       <>
         <section className="List">
           <TopNav />
-          <div className="coldbrew">
+          <div className="coldBrew">
             <p className="cold">콜드 부르 커피</p>
             <img className="coffeeimg" src={coffeeImg} alt="위벅스" />
             <p className="dcafe">
@@ -30,7 +30,7 @@ class List extends React.Component {
               );
             })}
           </section>
-          <div className="coldbrew">
+          <div className="coldBrew">
             <p className="cold">부르드 커피</p>
             <img
               className="coffeeimg"

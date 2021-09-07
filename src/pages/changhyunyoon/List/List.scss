@@ -13,10 +13,10 @@
 
   .logo {
     display: inline-block;
+    margin: 10px 0px 0px 20px;
     font-family: 'Dancing Script', cursive;
     font-size: 150%;
     font-weight: bold;
-    margin: 10px 0px 0px 20px;
   }
 
   .menu {
@@ -28,11 +28,11 @@
     text-decoration: none;
   }
 
-  .coldbrew {
+  .coldBrew {
     display: flex;
+    align-items: center;
     height: 55px;
     margin-bottom: 40px;
-    align-items: center;
     background-color: rgb(255, 242, 223);
   }
 
