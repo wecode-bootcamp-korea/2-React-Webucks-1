@@ -27,3 +27,5 @@ yarn-error.log*
 # memo
 myData.json
 productList.js
+whatIsStateParentComponent.js
+whatIsStateChildComponent.js

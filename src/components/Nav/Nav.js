@@ -3,7 +3,6 @@ import './Nav.scss';
 
 class Nav extends React.Component {
   render() {
-    console.log('nav ok');
     return (
       <nav className="coffee--nav">
         <h1 className="nav__logo">WeBucks</h1>
