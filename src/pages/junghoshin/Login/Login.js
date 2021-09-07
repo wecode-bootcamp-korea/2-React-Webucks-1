@@ -13,7 +13,7 @@ class Login extends Component {
           placeholder="전화번호, 사용자 이름 또는 이메일"
           value={this.inputId}
           name="inputId"
-          onChange={this.handleInput}
+          onChange={this.handleIdInput}
         />
 
         <input
@@ -22,7 +22,7 @@ class Login extends Component {
           placeholder="비밀번호"
           value={this.inputPw}
           name="inputPw"
-          onChange={this.handleInput}
+          onChange={this.handlePwInput}
         />
 
         <button
@@ -41,29 +41,3 @@ class Login extends Component {
 }
 
 export default Login;
-
-/*const userId = document.getElementById('id'); //id input
-const userPw = document.getElementById('password'); //pw input
-const logbtn = document.getElementsByClassName('login-btn')[0]; //login btn
-
-console.log(userId);
-
-userId.addEventListener('keyup', function () {
-    const inputId = document.getElementById('id').value;
-    const inputPw = document.getElementById('password').value;
-
-    if (inputPw.includes('@') && inputPw.length >= 8) {
-        console.log(123);
-
-        logbtn.style.opacity = 10;
-    }
-    logbtn.addEventListener("click","list.html")
-
-});*/
-
-/*
-userId.addEventListener('keyup',loginButtonColor)
-// console.log(loginButtonColor)
-userPw.addEventListener('keyup',loginButtonColor)
-logbtn.addEventListener('keyup',loginButtonColor)
-*/
