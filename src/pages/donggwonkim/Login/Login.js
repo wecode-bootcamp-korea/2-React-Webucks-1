@@ -18,8 +18,6 @@ class Login extends Component {
     this.state.idValid.includes('@') && this.state.pwValid.length > 4;
 
   render() {
-    let loginBtnActive = this.handleChangeBtn();
-
     return (
       <div className="Login">
         <section className="loginPage">
@@ -45,7 +43,7 @@ class Login extends Component {
                 onChange={this.handlePwInput}
               />
               <button
-                className={loginBtnActive ? 'active' : 'deactive'}
+                className={this.handleChangeBtn() ? 'active' : 'deactive'}
                 form="loginForm"
                 disabled
               >
