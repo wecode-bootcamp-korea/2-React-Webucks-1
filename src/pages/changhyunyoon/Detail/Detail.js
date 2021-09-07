@@ -1,5 +1,5 @@
 import React from 'react';
-import TopNav from '../TopNav/TopNav';
+import TopNav from '../../../components/TopNav/TopNav';
 import DetailReview from '../../../components/DetailReview';
 import { BsHeart } from 'react-icons/bs';
 import { BsHeartFill } from 'react-icons/bs';
@@ -23,8 +23,10 @@ class Detail extends React.Component {
     return (
       <>
         <div className="Detail">
-          <div className="content">
+          <header>
             <TopNav />
+          </header>
+          <div className="content">
             <div className="class">
               <p id="coldBrewClass">콜드브루</p>
               <p id="path">

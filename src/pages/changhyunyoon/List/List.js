@@ -1,5 +1,5 @@
 import React from 'react';
-import TopNav from '../TopNav/TopNav';
+import TopNav from '../../../components/TopNav/TopNav';
 import CoffeeCard from '../../../components/CoffeeCard';
 import { Coldbrew } from './ListMockDataCard';
 import { Brewed } from './ListMockDataCard';
@@ -11,7 +11,9 @@ class List extends React.Component {
     return (
       <>
         <section className="List">
-          <TopNav />
+          <header>
+            <TopNav />
+          </header>
           <div className="coldBrew">
             <p className="cold">콜드 부르 커피</p>
             <img className="coffeeimg" src={coffeeImg} alt="위벅스" />
