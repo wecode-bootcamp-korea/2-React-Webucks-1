@@ -1,9 +1,25 @@
-import React from 'react';
-// import { Link } from 'react-router-dom';
+import React, { Component } from 'react';
+// import Link from 'react-router-dom';
 import '../Login/Login.scss';
 
-class Login extends React.Component {
+class Login extends Component {
+  constructor() {
+    super();
+    this.state = {
+      idValid: '',
+      pwValid: '',
+    };
+  }
+
+  handleIdInput = event => this.setState({ idValid: event.target.value });
+  handlePwInput = event => this.setState({ pwValid: event.target.value });
+
+  handleChangeBtn = () =>
+    this.state.idValid.includes('@') && this.state.pwValid.length > 4;
+
   render() {
+    let loginBtnActive = this.handleChangeBtn();
+
     return (
       <div className="Login">
         <section className="loginPage">
@@ -20,13 +36,19 @@ class Login extends React.Component {
                 type="text"
                 className="inputId"
                 placeholder="전화번호, 사용자 이름 또는 이메일"
+                onChange={this.handleIdInput}
               />
               <input
                 type="password"
                 className="inputPw"
                 placeholder="비밀번호"
+                onChange={this.handlePwInput}
               />
-              <button className="loginBtn" form="loginForm" disabled>
+              <button
+                className={loginBtnActive ? 'active' : 'deactive'}
+                form="loginForm"
+                disabled
+              >
                 로그인
               </button>
             </form>
@@ -39,5 +61,4 @@ class Login extends React.Component {
     );
   }
 }
-
 export default Login;
