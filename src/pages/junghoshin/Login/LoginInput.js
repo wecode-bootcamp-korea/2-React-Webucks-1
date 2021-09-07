@@ -42,6 +42,12 @@ class LoginTool extends Component {
     }
   };
 
+  //확인
+  // btnClick = () => {
+  //   console.log('ID :', this.state.userName);
+  //   console.log('pw:', this.state.userPW);
+  //};
+
   render() {
     return (
       <div className="loginBox">

@@ -1,9 +1,9 @@
 // eslint-disable-line no-unused-vars
 import { Component } from 'react';
-import './DetailMockData';
-import '../Detail/Detail.scss';
 import '../TopNav/TopNav';
+import './DetailMockData';
 import '../List/List';
+import '../Detail/Detail.scss';
 
 class Detail extends Component {
   render() {
