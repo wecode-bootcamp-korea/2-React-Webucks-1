@@ -12,22 +12,9 @@ class Login extends React.Component {
     };
   }
 
-  handleIdInput = e => {
-    this.setState(
-      {
-        id: e.target.value,
-      },
-      () => this.handleBtn()
-    );
-  };
-
-  handlePWInput = e => {
-    this.setState(
-      {
-        password: e.target.value,
-      },
-      () => this.handleBtn()
-    );
+  handleInput = e => {
+    const { name, value } = e.target;
+    this.setState({ [name]: value }, () => this.handleBtn());
   };
 
   handleBtn = () => {
@@ -42,7 +29,8 @@ class Login extends React.Component {
   };
 
   render() {
-    const { id, password, isActive } = this.state;
+    console.log(this.state);
+    const { isActive } = this.state;
     return (
       <section className="Login">
         <div className="logInBox">
@@ -53,8 +41,8 @@ class Login extends React.Component {
                 className="text"
                 type="text"
                 placeholder="아이디"
-                value={id}
-                onChange={this.handleIdInput}
+                name="id"
+                onChange={this.handleInput}
                 onKeyPress={this.handleBtn}
               />
             </div>
@@ -63,8 +51,8 @@ class Login extends React.Component {
                 className="password"
                 type="password"
                 placeholder="비밀번호"
-                value={password}
-                onChange={this.handlePWInput}
+                name="password"
+                onChange={this.handleInput}
                 onKeyPress={this.handleBtn}
               />
             </div>

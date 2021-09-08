@@ -34,12 +34,7 @@ class List extends React.Component {
           </section>
           <div className="coldBrew">
             <p className="cold">부르드 커피</p>
-            <img
-              className="coffeeimg"
-              src={coffeeImg}
-              width="3%"
-              alt="위벅스"
-            />
+            <img className="coffeeimg" src={coffeeImg} alt="위벅스" />
             <p className="dcafe">
               디카페인 에스프레소 샷 추가 가능(일부 음료 제외)
             </p>
