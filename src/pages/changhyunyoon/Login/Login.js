@@ -31,9 +31,8 @@ class Login extends React.Component {
   };
 
   handleBtn = () => {
-    this.state.id.includes('@') && this.state.password.length >= 5
-      ? this.setState({ isActive: true, className: 'loginBtn active' })
-      : this.setState({ isActive: false, className: 'loginBtn' });
+    const { id, password } = this.state;
+    this.setState({ isActive: id.includes('@') && password.length >= 5 });
   };
 
   goToList = () => {
@@ -43,6 +42,7 @@ class Login extends React.Component {
   };
 
   render() {
+    const { id, password, isActive } = this.state;
     return (
       <section className="Login">
         <div className="logInBox">
@@ -53,7 +53,7 @@ class Login extends React.Component {
                 className="text"
                 type="text"
                 placeholder="아이디"
-                value={this.state.id}
+                value={id}
                 onChange={this.handleIdInput}
                 onKeyPress={this.handleBtn}
               />
@@ -63,14 +63,14 @@ class Login extends React.Component {
                 className="password"
                 type="password"
                 placeholder="비밀번호"
-                value={this.state.password}
+                value={password}
                 onChange={this.handlePWInput}
                 onKeyPress={this.handleBtn}
               />
             </div>
             <div>
               <button
-                className={this.state.isActive ? 'loginBtn active' : 'loginBtn'}
+                className={isActive ? 'loginBtn active' : 'loginBtn'}
                 onClick={this.goToList}
               >
                 로그인

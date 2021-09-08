@@ -1,8 +1,8 @@
 import React from 'react';
-import TopNav from '../../../components/TopNav/TopNav';
-import CoffeeCard from '../../../components/CoffeeCard';
-import { Coldbrew } from './ListMockDataCard';
-import { Brewed } from './ListMockDataCard';
+import TopNav from '../TopNav/TopNav';
+import CoffeeCard from './CoffeeCard';
+import { COLDBREW_DATA } from './COFFEELIST_MOCK_DATA';
+import { BREWED_DATA } from './COFFEELIST_MOCK_DATA';
 import coffeeImg from '../images/coffee.png';
 import './List.scss';
 
@@ -22,7 +22,7 @@ class List extends React.Component {
             </p>
           </div>
           <section className="menu1">
-            {Coldbrew.map(coffee => {
+            {COLDBREW_DATA.map(coffee => {
               return (
                 <CoffeeCard
                   alt={coffee.alt}
@@ -45,7 +45,7 @@ class List extends React.Component {
             </p>
           </div>
           <section className="menu2">
-            {Brewed.map(coffee => {
+            {BREWED_DATA.map(coffee => {
               return (
                 <CoffeeCard
                   alt={coffee.alt}

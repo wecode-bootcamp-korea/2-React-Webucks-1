@@ -1,6 +1,6 @@
 import React from 'react';
 import TopNav from '../../../components/TopNav/TopNav';
-import DetailReview from '../../../components/DetailReview';
+import DetailReview from '../Detail/DetailReview';
 import { BsHeart } from 'react-icons/bs';
 import { BsHeartFill } from 'react-icons/bs';
 import './Detail.scss';
