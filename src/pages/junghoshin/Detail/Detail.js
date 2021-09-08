@@ -1,9 +1,11 @@
 // eslint-disable-line no-unused-vars
 import { Component } from 'react';
+import './DetailReview';
 import './DetailMockData';
 import '../List/List';
 import '../TopNav/TopNav';
 import '../Detail/Detail.scss';
+import DetailReview from './DetailReview';
 
 class Detail extends Component {
   constructor() {
@@ -165,29 +167,9 @@ class Detail extends Component {
           </div>
           <div className="ReviewSection">
             <h2>Review</h2>
-            <ul className="ReviewComment">
-              <li>
-                <dl>
-                  <dt>coffee_lover</dt>
-                  <dd>너무 맛있어요!</dd>
-                </dl>
-              </li>
-              <li>
-                <dl>
-                  <dt>CHOCO7</dt>
-                  <dd>오늘도 화이트 초콜릿 모카를 마시러 갑니다.</dd>
-                </dl>
-              </li>
-              <li>
-                <dl>
-                  <dt>legend_dec</dt>
-                  <dd>
-                    진짜 화이트 초콜릿 모카는 전설이다. 진짜 화이트 초콜릿
-                    모카는 전설이다.
-                  </dd>
-                </dl>
-              </li>
-            </ul>
+            <div className="ReviewComment">
+              <DetailReview />
+            </div>
           </div>
           {/* <article/> */}
         </section>
