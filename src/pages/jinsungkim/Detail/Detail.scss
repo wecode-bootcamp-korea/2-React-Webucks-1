@@ -1,0 +1,261 @@
+.Detail {
+  main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  li {
+    list-style: none;
+    margin: 8px;
+  }
+
+  span {
+    font-size: 18px;
+    margin: 5px 10px 5px 0px;
+    padding: 10px 0px 0px 0px;
+  }
+
+  a {
+    text-decoration: none;
+    color: #bbb;
+  }
+
+  h4 {
+    margin-bottom: 15px;
+  }
+
+  .hFont {
+    font-size: 32px;
+    padding: 0px 0px 10px 0px;
+    margin: 20px 10px 0px 0px;
+  }
+
+  .webucksLogo {
+    font-family: 'Dancing Script', cursive;
+    margin: 0px 10px 10px 10px;
+    font-size: 32px;
+  }
+
+  .HeartButton {
+    .Button {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .defaultHeartButton {
+      color: #bbb;
+    }
+
+    .activeHeartButton {
+      color: red;
+    }
+
+    .defaultHeartButton:hover {
+      transform: scale(1.2);
+    }
+
+    .activeHeartButton:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  .TopNavBar {
+    .topNav {
+      display: flex;
+      justify-content: space-between;
+      margin: auto;
+      background-color: #f4f4f2;
+    }
+
+    .topMenu {
+      display: flex;
+      justify-content: right;
+      margin: 20px 15px 15px 15px;
+    }
+
+    .coffee {
+      color: #bbb;
+      text-decoration: none;
+    }
+
+    .menu {
+      margin-left: 20px;
+      color: #bbb;
+      text-decoration: none;
+    }
+
+    .store {
+      margin-left: 20px;
+      color: #bbb;
+      text-decoration: none;
+    }
+
+    .whatsNew {
+      margin-left: 20px;
+      color: #bbb;
+      text-decoration: none;
+    }
+
+    .pagePath {
+      margin-top: 50px;
+      color: #d0d0d0;
+    }
+
+    .pagePathFlex {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .CoffeeCardDetail {
+    .dolcheColdbrew {
+      width: 600px;
+      height: 600px;
+    }
+
+    .coldbrewSection {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .coldbrewNameUnderbar {
+      padding-bottom: 20px;
+      border-bottom: 5px solid black;
+    }
+
+    .informationSection {
+      display: flex;
+      justify-content: center;
+      margin-top: 100px;
+    }
+
+    .information {
+      margin-left: 30px;
+      width: 750px;
+    }
+
+    .informationFelx {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .explanation {
+      width: 510px;
+      margin: 20px 0px 20px 0px;
+      padding: 10px 0px 10px 10px;
+      font-size: 18px;
+    }
+
+    .nutrition {
+      display: flex;
+      justify-content: space-between;
+      margin: 0px 10px 0px 10px;
+      padding: 10px 0px 10px 0px;
+      border-top: 3px solid #eee;
+      border-bottom: 3px solid #eee;
+    }
+
+    .nutritionInformationFlex {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 10px 20px 10px;
+    }
+
+    .nutritionInformationFlex2 {
+      padding-right: 192px;
+    }
+
+    .nutritionInformationBorder {
+      border-right: 3px dotted #eee;
+    }
+
+    .nutritionInformationColumn {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .nutritionInformationStyle {
+      text-align: right;
+    }
+
+    .allergyNav {
+      margin: 0px 0px 50px 0px;
+      padding: 15px 10px 10px 20px;
+      border-radius: 5px;
+      font-size: 24px;
+      background-color: #eee;
+    }
+  }
+
+  .Review {
+    .reviewNav {
+      padding: 0px 10px 0px 10px;
+      font-weight: bold;
+      border-bottom: 3px solid #eee;
+    }
+
+    .reviewBox {
+      font-size: 18px;
+    }
+
+    .reviewFont {
+      font-size: 24px;
+    }
+
+    .inputReview {
+      padding: 15px 0px 15px 10px;
+      font-size: 18px;
+      resize: none;
+      border: none;
+      border-radius: 5px;
+      background-color: #eee;
+    }
+
+    .inputReviewFlex {
+      display: flex;
+      justify-content: center;
+    }
+
+    .reviewInputButton {
+      width: 70px;
+      height: 50px;
+      border: 3px solid #bbb;
+      border-radius: 5px;
+      background-color: #eee;
+    }
+
+    .reviewInputButton:hover {
+      background-color: #bbb;
+    }
+
+    .removeButtonFlex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .removeButton {
+      color: hotpink;
+    }
+
+    .removeButton:hover {
+      color: red;
+    }
+  }
+
+  .Footer {
+    .footerBottomFasten {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footerStyle {
+      margin-top: 555px;
+      display: flex;
+      justify-content: space-around;
+      color: white;
+      background-color: #333333;
+    }
+  }
+}

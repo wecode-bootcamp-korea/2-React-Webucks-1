@@ -1,0 +1,82 @@
+.Login {
+  .Style {
+    .backgroundColor {
+      width: 100vw;
+      height: 100vh;
+      background-color: #eee;
+    }
+
+    .loginBoxFlexCenter {
+      display: flex;
+      justify-content: center;
+    }
+
+    .loginBox {
+      border: 3px solid #dddddd;
+      border-radius: 5px;
+      width: 400px;
+      height: 500px;
+      margin-top: 200px;
+      background-color: white;
+    }
+
+    .innerBox {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin: auto;
+      width: 300px;
+      background-color: white;
+    }
+
+    .logo {
+      display: block;
+      margin: auto;
+      margin-top: 40px;
+      width: 200px;
+      height: 100px;
+    }
+
+    .inputBox {
+      border: 2px solid #dddddd;
+      border-radius: 5px;
+      padding-left: 10px;
+      margin-top: 20px;
+      height: 30px;
+    }
+  }
+
+  .Button {
+    .defaultButton {
+      display: flex;
+      justify-content: center;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 0px 10px 0px;
+      margin-top: 15px;
+      text-decoration: none;
+      color: white;
+      background-color: #add3eb;
+    }
+
+    .activeButton {
+      display: flex;
+      justify-content: center;
+      border: none;
+      border-radius: 10px;
+      padding: 10px 0px 10px 0px;
+      margin-top: 15px;
+      text-decoration: none;
+      color: white;
+      background-color: #61aded;
+    }
+  }
+  .findPw {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    text-decoration: none;
+    color: #6993af;
+    background-color: white;
+  }
+}
