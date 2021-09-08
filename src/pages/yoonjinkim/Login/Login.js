@@ -18,6 +18,16 @@ class Loginyoonjin extends React.Component {
     this.setState({ givenPwValue: event.target.value });
   };
 
+  isValidIdPwInput = () => {
+    return this.state.givenIdValue.contains('@') && this.state.givenPwValue > 4;
+  };
+
+  returnClassNameToHandleColor = () => {
+    if (isValidIdPwInput) {
+      return 'active';
+    } //미충족시 아무런 클래스명이 안 붙도록 하기 위함
+  };
+
   render() {
     console.log(this.state);
     return (
@@ -27,6 +37,7 @@ class Loginyoonjin extends React.Component {
           <Form
             setStateWhenInputId={this.handleIdInput}
             setStateWhenInputPw={this.handlePwInput}
+            returnClassNameToHandleColor={this.returnClassNameToHandleColor}
           ></Form>
         </div>
       </div>
@@ -63,7 +74,12 @@ class Form extends React.Component {
           />
         </div>
         <div className="button-wrap">
-          <input type="button" name="로그인" value="로그인" />
+          <input
+            className={this.props.returnClassNameToHandleColor}
+            type="button"
+            name="로그인"
+            value="로그인"
+          />
         </div>
         <div className="find-wrap">
           <a href="/accounts/login/?source=auth_switcher">
