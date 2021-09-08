@@ -1,5 +1,5 @@
 import React from 'react';
-import TopNav from '../../../components/TopNav/TopNav';
+import TopNav from '../TopNav/TopNav';
 import DetailReview from '../Detail/DetailReview';
 import { BsHeart } from 'react-icons/bs';
 import { BsHeartFill } from 'react-icons/bs';
@@ -20,6 +20,7 @@ class Detail extends React.Component {
   };
 
   render() {
+    const { clickIcon } = this.state;
     return (
       <>
         <div className="Detail">
@@ -47,7 +48,7 @@ class Detail extends React.Component {
                     <div id="menuNameEnglish">Dolce Cold Brew</div>
                   </div>
                   <div className="heartList">
-                    {this.state.clickIcon ? (
+                    {clickIcon ? (
                       <BsHeartFill
                         className="heart clickHeart"
                         onClick={this.heartBox}
