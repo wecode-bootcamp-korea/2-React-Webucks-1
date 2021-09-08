@@ -1,7 +1,7 @@
 import React from 'react';
 import './Login.scss';
 
-class ActiveButn extends React.Component {
+class LoginButton extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -11,7 +11,7 @@ class ActiveButn extends React.Component {
     };
   }
 
-  handleIdInput = event => {
+  handleInput = event => {
     if (event.target.type === 'text') {
       this.setState({
         id: event.target.value,
@@ -23,7 +23,7 @@ class ActiveButn extends React.Component {
     }
   };
 
-  butnActive = () => {
+  isValid = () => {
     return this.state.id.includes('@') && this.state.pw.length >= 5
       ? this.setState({ butnVaild: 'activeButton' })
       : this.setState({ butnVaild: 'defaultButton' });
@@ -33,15 +33,15 @@ class ActiveButn extends React.Component {
     return (
       <div class="innerBox">
         <input
-          onChange={this.handleIdInput}
-          onKeyUp={this.butnActive}
+          onChange={this.handleInput}
+          onKeyUp={this.isValid}
           class="inputBox"
           type="text"
           placeholder="전화번호, 사용자 이름 또는 이메일"
         />
         <input
-          onChange={this.handleIdInput}
-          onKeyUp={this.butnActive}
+          onChange={this.handleInput}
+          onKeyUp={this.isValid}
           class="inputBox"
           type="password"
           placeholder="비밀번호"
@@ -52,4 +52,4 @@ class ActiveButn extends React.Component {
   }
 }
 
-export default ActiveButn;
+export default LoginButton;

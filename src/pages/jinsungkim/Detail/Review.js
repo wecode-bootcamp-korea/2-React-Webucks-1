@@ -1,7 +1,7 @@
 import React from 'react';
 import './Detail.scss';
 
-class InputReview extends React.Component {
+class Review extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -17,10 +17,17 @@ class InputReview extends React.Component {
   };
 
   inputComment = () => {
-    this.state.list.push(this.state.input);
+    if (this.state.input.length > 0) {
+      this.setState({
+        list: this.state.list.concat(this.state.input),
+        input: '',
+      });
+    }
+  };
+
+  removeComment = comment => {
     this.setState({
-      list: this.state.list,
-      input: '',
+      list: this.state.list.filter(x => x !== comment),
     });
   };
 
@@ -28,8 +35,14 @@ class InputReview extends React.Component {
     return (
       <>
         <ul>
-          {this.state.list.map(el => (
-            <li>💞&nbsp;&nbsp; {el}</li>
+          {this.state.list.map(comment => (
+            <li class="removeButtonFlex">
+              {comment}
+              <i
+                onClick={() => this.removeComment(comment)}
+                class="far fa-trash-alt removeButton"
+              ></i>
+            </li>
           ))}
         </ul>
         <div class="inputReviewFlex">
@@ -43,7 +56,7 @@ class InputReview extends React.Component {
             placeholder="리뷰를 입력해 주세요"
           />
           <button onClick={this.inputComment} class="reviewInputButton">
-            입력
+            리뷰등록
           </button>
         </div>
       </>
@@ -51,4 +64,4 @@ class InputReview extends React.Component {
   }
 }
 
-export default InputReview;
+export default Review;

@@ -5,19 +5,19 @@ class TopNav extends React.Component {
   render() {
     return (
       <div>
-        <div class="topBar">
+        <div class="topNav">
           <span class="webucksLogo">Webucks</span>
           <nav class="topMenu">
-            <a class="coffeeTap" href="new" target="_blank">
+            <a class="coffee" href="new" target="_blank">
               COFFEE
             </a>
-            <a class="menuTap" href="new" target="_blank">
+            <a class="menu" href="new" target="_blank">
               MENU
             </a>
-            <a class="storeTap" href="new" target="_blank">
+            <a class="store" href="new" target="_blank">
               STORE
             </a>
-            <a class="whatsNewTap" href="new" target="_blank">
+            <a class="whatsNew" href="new" target="_blank">
               WHAT'S NEW
             </a>
           </nav>

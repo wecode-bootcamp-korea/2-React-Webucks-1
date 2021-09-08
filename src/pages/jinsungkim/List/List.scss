@@ -15,14 +15,14 @@
   }
 
   img {
-    width: 280px;
     margin-bottom: 5px;
+    width: 280px;
   }
 
   span {
     display: flex;
-    flex-direction: column;
-    text-align: center;
+    justify-content: center;
+    font-size: 18px;
   }
 
   small {
@@ -36,7 +36,7 @@
       font-size: 32px;
     }
 
-    .topBar {
+    .topNav {
       display: flex;
       justify-content: space-between;
       margin: auto;
@@ -54,24 +54,24 @@
       margin: 20px 15px 15px 15px;
     }
 
-    .coffeeTap {
+    .coffee {
       color: #bbb;
       text-decoration: none;
     }
 
-    .menuTap {
+    .menu {
       margin-left: 20px;
       color: #bbb;
       text-decoration: none;
     }
 
-    .storeTap {
+    .store {
       margin-left: 20px;
       color: #bbb;
       text-decoration: none;
     }
 
-    .whatsNewTap {
+    .whatsNew {
       margin-left: 20px;
       color: #bbb;
       text-decoration: none;
@@ -79,16 +79,12 @@
   }
 
   .CoffeeCard {
-    .coffeeCardFlex {
+    .flex {
       padding-left: 10px;
       margin-top: 15px;
       display: flex;
       flex-wrap: wrap;
       gap: 30px;
-    }
-
-    .coffeeMenuAlign {
-      margin: 10px 10px 10px 10px;
     }
 
     .coldbrewListBar {
@@ -103,6 +99,30 @@
       margin-top: 50px;
       font-size: 32px;
       background-color: #f4f4f2;
+    }
+  }
+
+  .HeartButn {
+    .align {
+      margin-left: 5px;
+      font-size: 25px;
+      margin-top: -5px;
+    }
+
+    .defaultHeartButton {
+      color: #bbb;
+    }
+
+    .activeHeartButton {
+      color: red;
+    }
+
+    .defaultHeartButton:hover {
+      transform: scale(1.2);
+    }
+
+    .activeHeartButton:hover {
+      transform: scale(1.2);
     }
   }
 }
