@@ -75,6 +75,19 @@
     margin-bottom: 20px;
     padding: 10px;
   }
+  // 하트버튼
+  .HeartBtnPack {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .HeartBtn {
+    color: #666666;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+  }
 
   /* > 이미지 */
   .DetailMenuCategory {

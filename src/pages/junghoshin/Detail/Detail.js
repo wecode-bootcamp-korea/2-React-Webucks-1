@@ -1,14 +1,27 @@
 // eslint-disable-line no-unused-vars
 import { Component } from 'react';
-import '../TopNav/TopNav';
 import './DetailMockData';
 import '../List/List';
+import '../TopNav/TopNav';
 import '../Detail/Detail.scss';
 
 class Detail extends Component {
+  constructor() {
+    super();
+    this.state = {
+      fav_heart: false,
+    };
+  }
+
+  heartIcon = () => {
+    this.setState({
+      fav_heart: !this.state.fav_heart,
+    });
+  };
+
   render() {
     return (
-      <div>
+      <div className="Detail">
         <header>
           <div className="webucks">
             <a href="list.html">WeBucks</a>
@@ -85,6 +98,7 @@ class Detail extends Component {
                 <h3>콜드 브루</h3>
                 <span className="EngName">Cold Brew</span>
                 <br />
+                {/* 하트버튼 */}
                 <div className="HeartBtnPack">
                   <button className="HeartBtn"></button>
                 </div>
