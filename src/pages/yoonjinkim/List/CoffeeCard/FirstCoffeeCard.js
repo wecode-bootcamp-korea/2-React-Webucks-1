@@ -4,7 +4,7 @@ import './CoffeeCard.scss';
 class FirstCoffeeCard extends React.Component {
   render() {
     return (
-      <div className="coffeecard-wrap">
+      <div className="list_coffeecard_item">
         <img src={this.props.src} alt={this.props.alt}></img>
         <p>{this.props.name}</p>
       </div>

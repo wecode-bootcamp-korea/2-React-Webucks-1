@@ -3,6 +3,7 @@ import Nav from '../../../components/Nav/Nav';
 import FirstCoffeeCard from './CoffeeCard/FirstCoffeeCard';
 import SecondCoffeeCard from './CoffeeCard/SecondCoffeeCard';
 import './List.scss';
+import '../../../styles/common.scss';
 
 class Listyoonjin extends React.Component {
   constructor() {
@@ -27,13 +28,14 @@ class Listyoonjin extends React.Component {
   render() {
     console.log(this.state.products, 'vdfadsa');
     return (
-      <div className="listpage-wrap">
+      <div className="Listyoonjin">
         <Nav />
-        <h2 className="list--head__coldbrew">☕️콜드 브루 커피☕️</h2>
-        <div className="coffeecard-list-wrap">
+        <h2 className="list_head">☕️콜드 브루 커피☕️</h2>
+        <div className="list_coffeecardwrap">
           {this.state.firstProducts.map(jsonFirstData => {
             return (
               <FirstCoffeeCard
+                // className="list_coffeecard_item"
                 key={jsonFirstData.key}
                 src={jsonFirstData.src}
                 alt={jsonFirstData.alt}
@@ -43,11 +45,12 @@ class Listyoonjin extends React.Component {
           })}
           }
         </div>
-        <h2 className="list--head__brewed">☕️브루드 커피☕️</h2>
-        <div className="coffeecard-list-wrap">
+        <h2 className="list_head">☕️브루드 커피☕️</h2>
+        <div className="list_coffeecardwrap">
           {this.state.secondProducts.map(jsonSecondData => {
             return (
               <SecondCoffeeCard
+                className="list_coffeecard_item"
                 key={jsonSecondData.key}
                 src={jsonSecondData.src}
                 alt={jsonSecondData.alt}

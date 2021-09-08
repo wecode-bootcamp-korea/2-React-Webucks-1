@@ -5,7 +5,7 @@ class Subject extends React.Component {
   render() {
     return (
       <div className="logo-wrap">
-        <img alt="logo" src=".svg" />
+        <p>Webucks</p>
       </div>
     );
   }
@@ -24,6 +24,11 @@ class Form extends React.Component {
         <div className="button-wrap">
           <input type="button" name="로그인" value="로그인" />
         </div>
+        <div className="find-wrap">
+          <a href="/accounts/login/?source=auth_switcher">
+            비밀번호를 잊으셨나요?
+          </a>
+        </div>
       </form>
     );
   }
@@ -34,8 +39,10 @@ class Loginyoonjin extends React.Component {
     console.log('나는 로그인 페이지');
     return (
       <div className="Login">
-        <Subject></Subject>
-        <Form></Form>
+        <div className="Login-innerwrap">
+          <Subject></Subject>
+          <Form></Form>
+        </div>
       </div>
     );
   }
