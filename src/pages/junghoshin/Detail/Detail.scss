@@ -1,12 +1,6 @@
 .Detail {
   @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
   body {
     display: flex;
     flex-wrap: wrap;
@@ -80,14 +74,18 @@
     position: absolute;
     top: 0;
     right: 0;
+
+    .heartBtnFill {
+      color: red;
+    }
   }
 
-  .HeartBtn {
-    color: #666666;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-  }
+  // .HeartBtn {
+  //   color: #666666;
+  //   background-color: white;
+  //   border: none;
+  //   cursor: pointer;
+  // }
 
   /* > 이미지 */
   .DetailMenuCategory {
@@ -168,127 +166,115 @@
     color: #424242;
     font-size: 16px;
   }
+}
 
-  .HeartBtnPack {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+.MenuInfo {
+  display: flex;
+  flex-direction: column;
 
-  .HeartBtn {
-    color: #9e9e9e;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-  }
-
-  .MenuInfo {
-    display: flex;
-    flex-direction: column;
-
-    dl {
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-
-  .MenuNutriInfo {
+  dl {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
-
-    p {
-      color: #212121;
-      font-size: 18px;
-      padding: 10px;
-      margin: 10px;
-    }
   }
+}
 
-  .MenuContentInfo {
-    display: flex;
-    justify-content: space-between;
+.MenuNutriInfo {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 
-    ul {
-      width: 45%;
-      margin: 10px;
-      padding: 10px;
-      font-size: 14px;
-    }
-
-    li {
-      padding-bottom: 15px;
-      list-style: none;
-    }
+  p {
+    color: #212121;
+    font-size: 18px;
+    padding: 10px;
+    margin: 10px;
   }
+}
 
-  .WarningMessage {
+.MenuContentInfo {
+  display: flex;
+  justify-content: space-between;
+
+  ul {
+    width: 45%;
     margin: 10px;
     padding: 10px;
-    font-size: 18px;
-    background-color: #eeeeee;
+    font-size: 14px;
   }
 
-  .border {
-    margin: 20px auto;
-    border-right: 1px dashed #eeeeee;
+  li {
+    padding-bottom: 15px;
+    list-style: none;
+  }
+}
+
+.WarningMessage {
+  margin: 10px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: #eeeeee;
+}
+
+.border {
+  margin: 20px auto;
+  border-right: 1px dashed #eeeeee;
+}
+
+.ReviewSection {
+  margin-bottom: 30px;
+
+  h2 {
+    padding: 20px 0px;
+    border-bottom: 1px solid #eeeeee;
   }
 
-  .ReviewSection {
-    margin-bottom: 30px;
-    h2 {
-      padding: 20px 0px;
-      border-bottom: 1px solid #eeeeee;
-    }
-
-    ul {
-      padding: 20px 0px;
-      list-style: none;
-    }
-
-    li {
-      padding-bottom: 12px;
-    }
-
-    dl {
-      position: relative;
-      display: flex;
-      justify-content: flex-start;
-    }
-
-    dt {
-      font-weight: 800;
-      padding-right: 10px;
-    }
-  }
-
-  footer {
-    width: 100%;
-    background-color: #424242;
-  }
-
-  .FooterMenu {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 20px auto;
-    padding: 10px 50px;
-    color: white;
-  }
-
-  .FooterMenu ul li {
+  ul {
+    padding: 20px 0px;
     list-style: none;
   }
 
-  .FooterMenuTitle {
-    margin-bottom: 15px;
-    font-size: 15px;
-    font-weight: 100;
+  li {
+    padding-bottom: 12px;
   }
 
-  .FooterMenuCont {
-    color: #eeeeee;
-    text-decoration: none;
+  dl {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
   }
+
+  dt {
+    font-weight: 800;
+    padding-right: 10px;
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: #424242;
+}
+
+.FooterMenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+  padding: 10px 50px;
+  color: white;
+}
+
+.FooterMenu ul li {
+  list-style: none;
+}
+
+.FooterMenuTitle {
+  margin-bottom: 15px;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+.FooterMenuCont {
+  color: #eeeeee;
+  text-decoration: none;
 }

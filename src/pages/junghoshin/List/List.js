@@ -2,13 +2,14 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
 import CoffeeCard from './CoffeeCard';
-import '../TopNav/TopNav';
+import TopNav from '../TopNav/TopNav';
 import './List.scss';
 
 class List extends React.Component {
   render() {
     return (
       <div className="Container">
+        <TopNav />
         <header className="ColdBrewBox" />
         <h4>콜드 브루 커피</h4>
         <div className="Nav2" />

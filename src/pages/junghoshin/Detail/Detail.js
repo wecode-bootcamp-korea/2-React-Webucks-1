@@ -1,11 +1,10 @@
 // eslint-disable-line no-unused-vars
 import { Component } from 'react';
-import './DetailReview';
-import './DetailMockData';
-import '../List/List';
-import '../TopNav/TopNav';
-import '../Detail/Detail.scss';
 import DetailReview from './DetailReview';
+import HeartBtn from './HeartBtn';
+import TopNav from '../TopNav/TopNav';
+import './DetailMockData';
+import '../Detail/Detail.scss';
 
 class Detail extends Component {
   constructor() {
@@ -25,25 +24,7 @@ class Detail extends Component {
     return (
       <div className="Detail">
         <header>
-          <div className="webucks">
-            <a href="list.html">WeBucks</a>
-          </div>
-          <nav>
-            <ul>
-              <li>
-                <a href="#!">COFFEE</a>
-              </li>
-              <li>
-                <a href="#!">MENU</a>
-              </li>
-              <li>
-                <a href="#!">STORE</a>
-              </li>
-              <li>
-                <a href="#!">WHAT'S NEW</a>
-              </li>
-            </ul>
-          </nav>
+          <TopNav />
         </header>
         <section className="DetailMenu">
           {/* <article> */}
@@ -102,7 +83,7 @@ class Detail extends Component {
                 <br />
                 {/* 하트버튼 */}
                 <div className="HeartBtnPack">
-                  <button className="HeartBtn"></button>
+                  <HeartBtn />
                 </div>
                 <p>
                   스타벅스 바리스타의 정성으로 탄생한 콜드 브루! 콜드 브루 전용

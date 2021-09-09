@@ -13,7 +13,11 @@ class CoffeeCard extends React.Component {
           <ul className="ColdBrew">
             {ColdBrewMockList.map(CoffeeDate => {
               <li>
-                <img src={CoffeeDate.scr} alt={CoffeeDate.alt} />
+                <img
+                  src={CoffeeDate.scr}
+                  alt={CoffeeDate.alt}
+                  title={CoffeeDate.title}
+                />
                 <p>{CoffeeDate.title}</p>
               </li>;
               // console.log(CoffeeDate);

@@ -34,8 +34,8 @@ class DetailReview extends React {
           <textarea
             onChange={this.comment}
             class="addReview"
-            cols="55"
-            rows="3"
+            cols="70"
+            rows="2"
             value={this.state.input}
             placeholder="리뷰를 입력해주세요."
           />
