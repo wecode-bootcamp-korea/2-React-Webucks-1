@@ -4,20 +4,21 @@ import './Form.scss';
 
 class Form extends React.Component {
   render() {
-    console.log(this.props.givenIdValue);
     return (
       <form className="Form">
         <input
+          name="id"
           className="user-account"
           type="text"
           placeholder="전화번호, 사용자 이름 또는 이메일"
-          onChange={this.props.setStateWhenInputId}
+          onChange={this.props.handleInput}
         />
         <input
+          name="pw"
           className="password"
           type="password"
           placeholder="비밀번호"
-          onChange={this.props.setStateWhenInputPw}
+          onChange={this.props.handleInput}
         />
         <input
           className={

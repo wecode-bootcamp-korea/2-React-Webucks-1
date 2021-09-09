@@ -7,10 +7,10 @@ class Nav extends React.Component {
       <nav className="Nav">
         <h1 className="nav__logo">WeBucks</h1>
         <ul className="nav__menu">
-          <li class="nav__menu--list">COFFEE</li>
-          <li class="nav__menu--list">MENU</li>
-          <li class="nav__menu--list">STORE</li>
-          <li class="nav__menu--list">WHAT'S NEW</li>
+          <li className="nav__menu--list">COFFEE</li>
+          <li className="nav__menu--list">MENU</li>
+          <li className="nav__menu--list">STORE</li>
+          <li className="nav__menu--list">WHAT'S NEW</li>
         </ul>
       </nav>
     );
