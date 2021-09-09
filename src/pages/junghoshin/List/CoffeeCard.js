@@ -1,7 +1,5 @@
 /* eslint-disable array-callback-return */
-/* eslint-disable no-unused-vars */
-
-import React, { Component } from 'react';
+import React from 'react';
 import ColdBrewMockList from './ListMockData';
 import './List.scss';
 
@@ -11,16 +9,15 @@ class CoffeeCard extends React.Component {
       <div>
         <section className="KindOfColdBrew">
           <ul className="ColdBrew">
-            {ColdBrewMockList.map(CoffeeDate => {
+            {ColdBrewMockList.map(coffeeDate => {
               <li>
                 <img
-                  src={CoffeeDate.scr}
-                  alt={CoffeeDate.alt}
-                  title={CoffeeDate.title}
+                  src={coffeeDate.scr}
+                  alt={coffeeDate.alt}
+                  title={coffeeDate.title}
                 />
-                <p>{CoffeeDate.title}</p>
+                <p>{coffeeDate.title}</p>
               </li>;
-              // console.log(CoffeeDate);
             })}
           </ul>
         </section>

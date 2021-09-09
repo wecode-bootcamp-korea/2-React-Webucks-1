@@ -15,7 +15,9 @@ class DetailReview extends React {
   };
 
   addComment = () => {
-    this.state.list.push(this.state.review);
+    this.setstate({
+      review: this.state.list.push(this.state.review),
+    });
     this.setState({
       list: this.state.list,
       input: '',
@@ -27,7 +29,7 @@ class DetailReview extends React {
       <>
         <ul>
           {this.state.list.map(el => (
-            <li>{el}</li>
+            <li>{el.list}</li>
           ))}
         </ul>
         <div class="ReviewCss">
@@ -36,7 +38,7 @@ class DetailReview extends React {
             class="addReview"
             cols="70"
             rows="2"
-            value={this.state.input}
+            value={this.state.review}
             placeholder="리뷰를 입력해주세요."
           />
           <button onClick={this.addComment} class="inputReviewBtn">

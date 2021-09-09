@@ -1,7 +1,6 @@
 import React from 'react';
 import { BsHeart, BsHeartFill } from 'react-icons/bs';
 import './heartBtnFill.scss';
-import '../Detail/.scss';
 
 class HeartBtn extends React.Component {
   constructor() {
