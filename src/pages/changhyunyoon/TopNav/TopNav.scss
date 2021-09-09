@@ -12,6 +12,10 @@
   }
 
   .menu {
+    display: flex;
+  }
+
+  .menubtn {
     display: inline;
     float: right;
     margin-top: 16px;

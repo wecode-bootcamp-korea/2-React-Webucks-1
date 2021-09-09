@@ -1,23 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 class TopNav extends React.Component {
   render() {
     return (
       <section className="TopNav">
         <p className="logo">WeBucks</p>
-        <Link href="#" className="menu">
-          WHAT'S NEW
-        </Link>
-        <Link href="#" className="menu">
-          STORE
-        </Link>
-        <Link href="#" className="menu">
-          MENU
-        </Link>
-        <Link href="#" className="menu">
-          COFFEE
-        </Link>
+        <div className="menu">
+          <a href="#" className="menubtn">
+            WHAT'S NEW
+          </a>
+          <a href="#" className="menubtn">
+            STORE
+          </a>
+          <a href="#" className="menubtn">
+            MENU
+          </a>
+          <a href="#" className="menubtn">
+            COFFEE
+          </a>
+        </div>
       </section>
     );
   }

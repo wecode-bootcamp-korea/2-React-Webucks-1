@@ -1,7 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
 .Detail {
   margin: 0px 100px;
 
@@ -12,52 +8,55 @@
 
     .logo {
       display: inline-block;
+      margin: 10px 0px 0px 20px;
       font-family: 'Dancing Script', cursive;
       font-size: 150%;
       font-weight: bold;
-      margin: 10px 0px 0px 20px;
     }
 
     .menu {
       display: inline;
+    }
+
+    .menubtn {
       float: right;
       margin-top: 16px;
       margin-right: 30px;
       color: rgb(172, 164, 153);
       text-decoration: none;
     }
+  }
 
-    .coldbrew {
-      display: flex;
-      height: 55px;
-      margin-bottom: 40px;
-      align-items: center;
-      background-color: rgb(255, 242, 223);
-    }
+  .coldbrew {
+    display: flex;
+    height: 55px;
+    margin-bottom: 40px;
+    align-items: center;
+    background-color: rgb(255, 242, 223);
+  }
 
-    .cold {
-      display: inline;
-      margin-left: 20px;
-      font-size: 110%;
-      font-weight: bold;
-    }
+  .cold {
+    display: inline;
+    margin-left: 20px;
+    font-size: 110%;
+    font-weight: bold;
+  }
 
-    .coffeeimg {
-      display: inline;
-      width: 30px;
-      margin-left: 5px;
-    }
+  .coffeeimg {
+    display: inline;
+    width: 30px;
+    margin-left: 5px;
+  }
 
-    .dcafe {
-      display: inline;
-      font-size: 14px;
-    }
+  .dcafe {
+    display: inline;
+    font-size: 14px;
+  }
 
-    .content {
-      display: grid;
-      place-items: center;
-      margin: 0 0 100px 0;
-    }
+  .content {
+    display: grid;
+    place-items: center;
+    margin: 0 0 100px 0;
   }
 
   .class {
@@ -164,12 +163,7 @@
         width: 350px;
       }
 
-      .nutri1,
-      .nutri2,
-      .nutri3,
-      .nutri4,
-      .nutri5,
-      .nutri6 {
+      .nutri {
         display: flex;
         justify-content: space-between;
         margin: 15px 10px;
@@ -233,18 +227,12 @@
     color: #efefef;
     background-color: #333333;
 
-    .company,
-    .corporate-sales,
-    .partnership,
-    .online-community {
+    .footerName {
       display: flex;
       flex-direction: column;
     }
 
-    .company-list,
-    .corporate-sales-list,
-    .partnership-list,
-    .online-community-list {
+    .footerList {
       line-height: 25px;
       color: #efefef;
     }

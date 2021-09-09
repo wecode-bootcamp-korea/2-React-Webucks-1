@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Login.scss';
 
 class Login extends React.Component {
@@ -29,7 +28,6 @@ class Login extends React.Component {
   };
 
   render() {
-    console.log(this.state);
     const { isActive } = this.state;
     return (
       <section className="Login">
@@ -65,9 +63,9 @@ class Login extends React.Component {
               </button>
             </div>
           </form>
-          <Link className="link" href="#">
+          <a className="link" href="http://naver.com">
             비밀번호를 잊으셨나요?
-          </Link>
+          </a>
         </div>
       </section>
     );

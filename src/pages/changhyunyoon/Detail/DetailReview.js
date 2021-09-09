@@ -5,40 +5,51 @@ class DetailReview extends React.Component {
     super();
     this.state = {
       review: '',
-      list: [{ text: '' }],
+      list: [],
     };
   }
 
   textChange = e => {
-    this.setState({ review: e.target.value });
+    const { value } = e.target;
+    this.setState({ review: value });
   };
+
+  // cleanReview = () => {
+  //   let arr = this.state.list;
+  //   arr = arr.concat({ text: this.state.review });
+  //   this.setState({ review: '', list: arr });
+  // };
 
   cleanReview = () => {
-    let arr = this.state.list;
-    arr = arr.concat({ text: this.state.review });
-    this.setState({ review: '', list: arr });
+    const { list, review } = this.state;
+    this.setState({
+      list: list.concat(review),
+      review: '',
+    });
   };
 
-  pressEnter = e => {
-    if (e.key === 'Enter') {
-      this.cleanReview((e.target.value = ''));
+  pressEnter = putReview => {
+    if (putReview.key === 'Enter' && putReview.target.value !== '') {
+      this.cleanReview((putReview.target.value = ''));
     }
   };
 
   render() {
+    const { textChange, pressEnter } = this;
+    const { list } = this.state;
     return (
       <>
         <ul className="textBox">
-          {this.state.list.map(e => (
-            <li>{e.text}</li>
+          {list.map((e, id) => (
+            <li key={id}>{e}</li>
           ))}
         </ul>
         <input
           id="reviewInput"
           type="text"
           placeholder="리뷰를 입력해주세요"
-          onChange={this.textChange}
-          onKeyPress={this.pressEnter}
+          onChange={textChange}
+          onKeyPress={pressEnter}
         />
       </>
     );

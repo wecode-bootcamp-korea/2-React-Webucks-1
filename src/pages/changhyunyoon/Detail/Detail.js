@@ -9,18 +9,18 @@ class Detail extends React.Component {
   constructor() {
     super();
     this.state = {
-      clickIcon: false,
+      clickHeartIcon: false,
     };
   }
 
   heartBox = () => {
     this.setState({
-      clickIcon: !this.state.clickIcon,
+      clickHeartIcon: !this.state.clickHeartIcon,
     });
   };
 
   render() {
-    const { clickIcon } = this.state;
+    const { clickHeartIcon } = this.state;
     return (
       <>
         <div className="Detail">
@@ -48,7 +48,7 @@ class Detail extends React.Component {
                     <div id="menuNameEnglish">Dolce Cold Brew</div>
                   </div>
                   <div className="heartList">
-                    {clickIcon ? (
+                    {clickHeartIcon ? (
                       <BsHeartFill
                         className="heart clickHeart"
                         onClick={this.heartBox}
@@ -72,29 +72,29 @@ class Detail extends React.Component {
                     <div className="menuNutritionMain">
                       <div className="menuNutritionBox">
                         <div className="nutritionBoxLeft">
-                          <div className="nutri1">
+                          <div className="nutri">
                             <div>1회 제공량 (kcal)</div>
                             <div>265</div>
                           </div>
-                          <div className="nutri2">
+                          <div className="nutri">
                             <div>포화지방 (g)</div>
                             <div>9</div>
                           </div>
-                          <div className="nutri3">
+                          <div className="nutri">
                             <div>단백질 (g)</div>
                             <div>8</div>
                           </div>
                         </div>
                         <div className="nutritionBoxRight">
-                          <div class="nutri4">
+                          <div className="nutri">
                             <div>나트륨 (mg)</div>
                             <div>115</div>
                           </div>
-                          <div className="nutri5">
+                          <div className="nutri">
                             <div>당류 (g)</div>
                             <div>29</div>
                           </div>
-                          <div className="nutri6">
+                          <div className="nutri">
                             <div>카페인 (mg)</div>
                             <div>150</div>
                           </div>
@@ -113,33 +113,33 @@ class Detail extends React.Component {
             </div>
           </div>
           <div className="footer">
-            <div className="company">
+            <div className="footerName">
               <div>COMPANY</div>
-              <ul className="company-list">
+              <ul className="footerList">
                 <li>한눈에 보기</li>
                 <li>스타벅스 사명</li>
-                <liv>스타벅스 소개</liv>
+                <li>스타벅스 소개</li>
                 <li>국내 뉴스룸</li>
                 <li>세계의 스타벅스</li>
                 <li>글로벌 뉴스룸</li>
               </ul>
             </div>
-            <div className="corporate-sales">
+            <div className="footerName">
               <div>CORPORATE SALES</div>
-              <ul className="corporate-sales-list">
+              <ul className="footerList">
                 <li>단체 및 기업 구매 안내</li>
               </ul>
             </div>
-            <div className="partnership">
+            <div className="footerName">
               <div>PARTNERSHIP</div>
-              <ul className="partnership-list">
+              <ul className="footerList">
                 <li>신규 입점 제의</li>
                 <li>협력 고객사 등록 신청</li>
               </ul>
             </div>
-            <div className="online-community">
+            <div className="footerName">
               <div>ONLINE COMMUNITY</div>
-              <ul className="partnership-list">
+              <ul className="footerList">
                 <li>페이스북</li>
                 <li>트위터</li>
                 <li>유튜브</li>

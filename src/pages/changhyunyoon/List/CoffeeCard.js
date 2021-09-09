@@ -5,7 +5,7 @@ class CoffeeCard extends React.Component {
     return (
       <div>
         <a>
-          <img alt={this.props.alt} src={this.props.src} />
+          <img key={this.props.id} img={this.props.img} alt={this.props.alt} />
         </a>
         <p>{this.props.name}</p>
       </div>
