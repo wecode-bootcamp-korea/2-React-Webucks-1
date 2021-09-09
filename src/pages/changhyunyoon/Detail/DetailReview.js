@@ -14,12 +14,6 @@ class DetailReview extends React.Component {
     this.setState({ review: value });
   };
 
-  // cleanReview = () => {
-  //   let arr = this.state.list;
-  //   arr = arr.concat({ text: this.state.review });
-  //   this.setState({ review: '', list: arr });
-  // };
-
   cleanReview = () => {
     const { list, review } = this.state;
     this.setState({
