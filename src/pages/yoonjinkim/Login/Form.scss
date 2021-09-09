@@ -1,0 +1,40 @@
+$theme-color-white: white;
+
+.Form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: $theme-color-white;
+
+  input {
+    // background-color: $theme-color-white;
+    margin: 0.3rem;
+    position: relative;
+    top: -4rem;
+    border-radius: 0.2rem;
+    padding: 0.4rem;
+    width: 250px;
+    border: 1px solid #dbdbdb;
+
+    //선택자를 잘못쓴듯하다... js코드에서는 문제 못 발견했는데, 색상이 안 바뀐다
+    &.button-active {
+      background-color: #88b3cd;
+      color: $theme-color-white;
+    }
+
+    &.button-inactive {
+      background-color: #4080a8;
+      color: $theme-color-white;
+    }
+  }
+
+  .findLink {
+    display: flex;
+    justify-content: center;
+    font-size: 0.6rem;
+    background-color: $theme-color-white;
+    font-size: 0.5rem;
+    color: #4080a8;
+  }
+}

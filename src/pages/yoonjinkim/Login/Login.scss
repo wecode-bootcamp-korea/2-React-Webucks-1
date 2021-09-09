@@ -1,81 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
 
-$theme-color-0: white;
+$theme-color-white: white;
 
-* {
-  box-sizing: border-box;
-  background-color: #edefef;
-}
-
-.Login {
+.Loginyoonjin {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.Login-innerwrap {
-  height: 500px;
-  width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  border: 1px solid #dbdbdb;
-  background-color: $theme-color-0;
-}
-
-.logo-wrap {
-  display: flex;
-  justify-content: center;
-  font-family: 'WindSong', cursive;
-  font-size: 50px;
-  background-color: $theme-color-0;
-
-  p {
-    background-color: $theme-color-0;
-  }
-}
-
-.form-wrap {
-  display: flex;
-
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background-color: $theme-color-0;
-}
-
-input {
-  background-color: $theme-color-0;
-  margin: 0.3rem;
-  position: relative;
-  top: -4rem;
-
-  .user-account,
-  .password {
-    border-radius: 0.2rem;
-    padding: 0.4rem;
-    width: 250px;
+  .Login-innerwrap {
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     border: 1px solid #dbdbdb;
+    background-color: $theme-color-white;
   }
-
-  .button-active {
-    background-color: #88b3cd;
-    color: $theme-color-0;
-  }
-
-  .button-inactive {
-    background-color: #4080a8;
-  }
-}
-
-.find-wrap {
-  display: flex;
-  justify-content: center;
-  font-size: 0.6rem;
-  background-color: $theme-color-0;
-}
-
-a {
-  color: #4080a8;
-  background-color: $theme-color-0;
 }

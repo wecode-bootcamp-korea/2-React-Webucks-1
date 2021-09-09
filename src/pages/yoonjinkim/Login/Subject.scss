@@ -1,0 +1,13 @@
+$theme-color-white: white;
+
+.Subject {
+  display: flex;
+  justify-content: center;
+  font-family: 'WindSong', cursive;
+  font-size: 50px;
+  background-color: $theme-color-white;
+
+  p {
+    background-color: $theme-color-white;
+  }
+}
