@@ -7,7 +7,7 @@ import './Detail.scss';
 class Detailyoonjin extends React.Component {
   render() {
     return (
-      <>
+      <div className="Detailyoonjin">
         <Nav />
         <h2 className="detail_category">콜드 브루</h2>
         <p className="detail_breadcrumb">
@@ -19,7 +19,7 @@ class Detailyoonjin extends React.Component {
             <h4 className="detail_item-name_eng">White Chocolate Mocha</h4>
           </div>
         </article>
-      </>
+      </div>
     );
   }
 }

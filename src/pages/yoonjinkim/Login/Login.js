@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Login.scss';
 
 class Loginyoonjin extends React.Component {
@@ -10,35 +11,36 @@ class Loginyoonjin extends React.Component {
     };
   }
 
-  handleIdInput = event => {
+  setStateWhenInputId = event => {
     this.setState({ givenIdValue: event.target.value });
   };
 
-  handlePwInput = event => {
+  setStateWhenInputPw = event => {
     this.setState({ givenPwValue: event.target.value });
   };
+
+  // 비슷한 거를 합치기
+  // handleInput = event => {
+  //   const { name, value } = event.target;
+  //   this.setState({ [name]: value });
+  // };
 
   isValidIdPwInput = () => {
     return this.state.givenIdValue.contains('@') && this.state.givenPwValue > 4;
   };
 
-  returnClassNameToHandleColor = () => {
-    if (isValidIdPwInput) {
-      return 'active';
-    } //미충족시 아무런 클래스명이 안 붙도록 하기 위함
-  };
-
   render() {
     console.log(this.state);
+    console.log(this.isValidIdPwInput);
     return (
-      <div className="Login">
+      <div className="Loginyoonjin">
         <div className="Login-innerwrap">
-          <Subject></Subject>
+          <Subject />
           <Form
-            setStateWhenInputId={this.handleIdInput}
-            setStateWhenInputPw={this.handlePwInput}
-            returnClassNameToHandleColor={this.returnClassNameToHandleColor}
-          ></Form>
+            setStateWhenInputId={this.setStateWhenInputId}
+            setStateWhenInputPw={this.setStateWhenInputPw}
+            isValidIdPwInput={this.isValidIdPwInput}
+          />
         </div>
       </div>
     );
@@ -59,33 +61,29 @@ class Form extends React.Component {
   render() {
     return (
       <form className="form-wrap">
-        <div className="useraccount-wrap">
-          <input
-            type="text"
-            placeholder="전화번호, 사용자 이름 또는 이메일"
-            onChange={this.props.setStateWhenInputId}
-          />
-        </div>
-        <div className="password-wrap">
-          <input
-            type="password"
-            placeholder="비밀번호"
-            onChange={this.props.setStateWhenInputPw}
-          />
-        </div>
-        <div className="button-wrap">
-          <input
-            className={this.props.returnClassNameToHandleColor}
-            type="button"
-            name="로그인"
-            value="로그인"
-          />
-        </div>
-        <div className="find-wrap">
-          <a href="/accounts/login/?source=auth_switcher">
-            비밀번호를 잊으셨나요?
-          </a>
-        </div>
+        <input
+          className="user-account"
+          type="text"
+          placeholder="전화번호, 사용자 이름 또는 이메일"
+          onChange={this.props.setStateWhenInputId}
+        />
+        <input
+          className="password"
+          type="password"
+          placeholder="비밀번호"
+          onChange={this.props.setStateWhenInputPw}
+        />
+        <input
+          className={
+            this.isValidIdPwInput ? 'button-active' : 'button-inactive'
+          }
+          type="button"
+          name="로그인"
+          value="로그인"
+        />
+        <Link to="/accounts/login/?source=auth_switcher">
+          비밀번호를 잊으셨나요?
+        </Link>
       </form>
     );
   }

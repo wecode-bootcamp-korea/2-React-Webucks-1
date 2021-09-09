@@ -23,7 +23,6 @@ import Detailjinsung from './pages/jinsungkim/Detail/Detail';
 
 class Routes extends React.Component {
   render() {
-    console.log('Routes!!!!!!');
     return (
       <Router>
         <Switch>

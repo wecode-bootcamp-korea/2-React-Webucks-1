@@ -1,7 +1,7 @@
 import React from 'react';
 import './CoffeeCard.scss';
 
-class FirstCoffeeCard extends React.Component {
+class CoffeeCard extends React.Component {
   render() {
     return (
       <div className="list_coffeecard_item">
@@ -12,4 +12,4 @@ class FirstCoffeeCard extends React.Component {
   }
 }
 
-export default FirstCoffeeCard;
+export default CoffeeCard;
