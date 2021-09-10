@@ -1,12 +1,31 @@
 import React from 'react';
-import '../../../styles/reset.scss';
-import '../../../styles/common.scss';
 import Nav from '../../../components/Nav/Nav';
-import LikeBtn from '../../../components/Icon/LikeBtn';
+// import LikeBtn from '../../../components/Icon/LikeBtn';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHeart as FasHeart } from '@fortawesome/free-solid-svg-icons';
+import { faHeart as FarHeart } from '@fortawesome/free-regular-svg-icons';
+
 import './Detail.scss';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Detailyoonjin extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      icon: FarHeart,
+      liked: true,
+    };
+  }
+
+  clickHandler = () => {
+    this.setState = {
+      icon: FasHeart,
+      liked: false,
+    };
+  };
+
   render() {
+    console.log('렌더됨');
     return (
       <div className="Detailyoonjin">
         <Nav />
@@ -19,7 +38,11 @@ class Detailyoonjin extends React.Component {
           <div className="detail_info-wrap_title">
             <h3 className="detail_item-name_kor">화이트 초콜릿 모카</h3>
             <h4 className="detail_item-name_eng">White Chocolate Mocha</h4>
-            <LikeBtn />
+            <FontAwesomeIcon
+              icon={this.state.icon}
+              onClick={this.clickHandler}
+            />
+            {/* <LikeBtn changeColor={this.changeColor} icon={this.state.icon} /> */}
           </div>
         </article>
       </div>

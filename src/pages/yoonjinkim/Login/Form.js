@@ -27,6 +27,7 @@ class Form extends React.Component {
           type="button"
           name="로그인"
           value="로그인"
+          onClick={this.props.sendData}
         />
         <Link to="/accounts/login/?source=auth_switcher" className="findLink">
           비밀번호를 잊으셨나요?

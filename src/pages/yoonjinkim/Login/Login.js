@@ -12,10 +12,39 @@ class Loginyoonjin extends React.Component {
     };
   }
 
+  sendData = () => {
+    fetch('/users/signup', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: this.state.id,
+        password: this.state.pw,
+      }),
+    })
+      .then(response => response.json())
+      .then(data => console.log(data));
+  };
+
+  sendData = () => {
+    fetch('/users/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: this.state.id,
+        password: this.state.pw,
+      }),
+    })
+      .then(response => response.json())
+      .then(data => console.log(data));
+    console.log(this.state);
+  };
+
   handleInput = event => {
-    // const { name, value } = event.target; 으로 묶기 전
-    const name = event.target.name;
-    const value = event.target.value;
+    const { name, value } = event.target;
     // 바로 위에서 변수(상수?)에 담아준 걸로, 이렇게 짧게 표현 (아래)
     this.setState({ [name]: value });
     //[] 안에 name 써준 건, '계산된 속성명'이란 거임...
@@ -35,6 +64,7 @@ class Loginyoonjin extends React.Component {
           <Form
             handleInput={this.handleInput}
             isValidIdPwInput={this.isValidIdPwInput}
+            sendData={this.sendData}
           />
         </div>
       </div>
