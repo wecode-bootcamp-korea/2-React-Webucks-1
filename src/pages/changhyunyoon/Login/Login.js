@@ -25,6 +25,33 @@ class Login extends React.Component {
     if (this.state.isActive) {
       this.props.history.push('./list-changhyun');
     }
+    fetch('users/login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: this.state.id,
+        password: this.state.password,
+      }),
+    })
+      .then(response => response.json())
+      .then(result => console.log(result));
+  };
+
+  goToId = () => {
+    fetch('users/signup', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        email: this.state.id,
+        password: this.state.password,
+      }),
+    })
+      .then(response => response.json())
+      .then(result => console.log(result));
   };
 
   render() {
@@ -63,6 +90,9 @@ class Login extends React.Component {
               </button>
             </div>
           </form>
+          <button className="makeId" onClick={this.goToId} type="button">
+            회원가입
+          </button>
           <a className="link" href="http://naver.com">
             비밀번호를 잊으셨나요?
           </a>

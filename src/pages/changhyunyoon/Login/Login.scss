@@ -38,7 +38,7 @@
   }
 
   .loginBtn {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     border: 0px;
     outline: 0px;
     border-radius: 8px;
@@ -49,6 +49,15 @@
 
   .active {
     opacity: 1;
+  }
+
+  .makeId {
+    justify-content: center;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 13px;
+    color: #3a72da;
+    background-color: white;
   }
 
   .link {
