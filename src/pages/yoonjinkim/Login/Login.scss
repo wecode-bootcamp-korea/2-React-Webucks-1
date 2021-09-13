@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=WindSong:wght@500&display=swap');
+
+$theme-color-white: white;
+
+.Loginyoonjin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .Login-innerwrap {
+    height: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid #dbdbdb;
+    background-color: $theme-color-white;
+  }
+}

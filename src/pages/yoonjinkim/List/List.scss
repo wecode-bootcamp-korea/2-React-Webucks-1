@@ -1,0 +1,33 @@
+.Listyoonjin {
+  $theme-color-1: #f4f4f2;
+  //#f4f4f2
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 3rem;
+  }
+
+  // .Listyoonjin {
+  //   width: 100%;
+  // }
+
+  .list_head {
+    padding: 1rem;
+    background-color: $theme-color-1;
+  }
+
+  .list_coffeecardwrap {
+    width: 31%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  // .list_coffeecard_item:hover {
+  //   transform: scale(1.1, 1.1);
+  // }
+}

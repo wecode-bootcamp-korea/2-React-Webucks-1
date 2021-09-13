@@ -23,3 +23,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# memo
+myData.json
+productList.js
+whatIsStateParentComponent.js
+whatIsStateChildComponent.js
