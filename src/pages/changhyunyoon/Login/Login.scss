@@ -1,0 +1,75 @@
+.Login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 1000px;
+  background-color: gainsboro;
+
+  .logInBox {
+    margin-top: 150px;
+    width: 400px;
+    height: 460px;
+    text-align: center;
+    border: 2px solid whitesmoke;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+  .logInlogo {
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 350%;
+    font-weight: bold;
+  }
+
+  input,
+  button {
+    display: inline-block;
+    width: 300px;
+    height: 38px;
+    padding: 0px 0px 0px 8px;
+  }
+
+  input {
+    border: 2px solid gainsboro;
+    border-radius: 8px;
+    background-color: whitesmoke;
+  }
+
+  .loginBtn {
+    margin-bottom: 40px;
+    border: 0px;
+    outline: 0px;
+    border-radius: 8px;
+    color: white;
+    opacity: 0.5;
+    background-color: #3a72da;
+  }
+
+  .active {
+    opacity: 1;
+  }
+
+  .makeId {
+    justify-content: center;
+    margin-bottom: 15px;
+    border: none;
+    font-size: 13px;
+    color: #3a72da;
+    background-color: white;
+  }
+
+  .link {
+    display: flex;
+    justify-content: center;
+    color: #3a72da;
+    text-decoration: none;
+    font-size: 13px;
+  }
+
+  .text,
+  .password {
+    margin-bottom: 4%;
+  }
+}
